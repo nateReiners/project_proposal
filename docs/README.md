@@ -32,10 +32,10 @@ TogLink is a web application inspired by 500px built using Ruby on Rails and Rea
 
 # make these into links
 
-[View Wireframes](./wireframes/)
-[API Endpoints](./api-endpoints.md)
-[DB Schema](./schema.md)
-[Sample State](./sample-state.md)
+[View Wireframes](wireframes/)
+[API Endpoints](api-endpoints.md)
+[DB Schema](schema.md)
+[Sample State](sample-state.md)
 
 
 ---Implementation Timeline---
