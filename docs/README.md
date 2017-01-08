@@ -2,7 +2,7 @@
 
 TODO: add link to live version of site
 
-Trello link: https://trello.com/b/U5H5Xk4Y/toglink-by-nate
+[Trello Link](https://trello.com/b/U5H5Xk4Y/toglink-by-nate)
 
 ## Minimum Viable Product
 
@@ -30,7 +30,7 @@ TogLink is a web application inspired by 500px built using Ruby on Rails and Rea
 
 ## Design Docs
 
-[View Wireframes](wireframes)
+[View Wireframes](./wireframes/)
 [API Endpoints](api-endpoints.md)
 [DB Schema](schema.md)
 [Sample State](sample-state.md)
