@@ -1,10 +1,10 @@
----TogLink---
+# TogLink
 
 TODO: add link to live version of site
 
 Trello link: https://trello.com/b/U5H5Xk4Y/toglink-by-nate
 
----Minimum Viable Product---
+### Minimum Viable Product
 
 TogLink is a web application inspired by 500px built using Ruby on Rails and React/Redux. It will include the following features with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
 
@@ -28,9 +28,7 @@ TogLink is a web application inspired by 500px built using Ruby on Rails and Rea
     -Smooth, bug-free navigation
     -Adequate and appropriate seeds to demonstrate the feature
 
----Design Docs---
-
-# make these into links
+### Design Docs
 
 [View Wireframes](wireframes)
 [API Endpoints](api-endpoints.md)
@@ -38,7 +36,7 @@ TogLink is a web application inspired by 500px built using Ruby on Rails and Rea
 [Sample State](sample-state.md)
 
 
----Implementation Timeline---
+### Implementation Timeline
 
 Phase 1: Backend setup and Front End User Authentication (2 days)
 
@@ -65,7 +63,7 @@ Phase 6: - infinite Scroll for Home Feed (1 day)
 
 objective: Add infinite scroll to home feed
 
----Bonus Features (TBD)---
+### Bonus Features (TBD)
 
 Bonus: Tags
 Bonus: Discover
