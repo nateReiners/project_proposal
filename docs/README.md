@@ -6,27 +6,27 @@ TODO: add link to live version of site
 
 ## Minimum Viable Product
 
-TogLink is a web application inspired by 500px built using Ruby on Rails and React/Redux. It will include the following features with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
+##### TogLink is a web application inspired by 500px built using Ruby on Rails and React/Redux. It will include the following features with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
 
-  -New account creation, login, and guest/demo login
-  -A production README, TODO: add this
-  -Hosting on Heroku
-  -Post Pictures
-    -Adequate styling
-    -Smooth, bug-free navigation
-    -Adequate and appropriate seeds to demonstrate the feature
-  -Follows
-    -Adequate styling
-    -Smooth, bug-free navigation
-    -Adequate and appropriate seeds to demonstrate the feature
-  -Home Feed
-    -Adequate styling
-    -Smooth, bug-free navigation
-    -Adequate and appropriate seeds to demonstrate the feature
-  -Profile Page
-    -Adequate styling
-    -Smooth, bug-free navigation
-    -Adequate and appropriate seeds to demonstrate the feature
+  1. New account creation, login, and guest/demo login
+  2. A production README, TODO: add this
+  3. Hosting on Heroku
+  4. Post Pictures
+    ..* Adequate styling
+    ..* Smooth, bug-free navigation
+    ..* Adequate and appropriate seeds to demonstrate the feature
+  5. Follows
+    ..* Adequate styling
+    ..* Smooth, bug-free navigation
+    ..* Adequate and appropriate seeds to demonstrate the feature
+  6. Home Feed
+    ..* Adequate styling
+    ..* Smooth, bug-free navigation
+    ..* Adequate and appropriate seeds to demonstrate the feature
+  7. Profile Page
+    ..* Adequate styling
+    ..* Smooth, bug-free navigation
+    ..* Adequate and appropriate seeds to demonstrate the feature
 
 ## Design Docs
 
