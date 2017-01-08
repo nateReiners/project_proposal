@@ -12,21 +12,21 @@ TODO: add link to live version of site
   2. A production README, TODO: add this
   3. Hosting on Heroku
   4. Post Pictures
-    ..* Adequate styling
-    ..* Smooth, bug-free navigation
-    ..* Adequate and appropriate seeds to demonstrate the feature
+      * Adequate styling
+      * Smooth, bug-free navigation
+      * Adequate and appropriate seeds to demonstrate the feature
   5. Follows
-    ..* Adequate styling
-    ..* Smooth, bug-free navigation
-    ..* Adequate and appropriate seeds to demonstrate the feature
+      * Adequate styling
+      * Smooth, bug-free navigation
+      * Adequate and appropriate seeds to demonstrate the feature
   6. Home Feed
-    ..* Adequate styling
-    ..* Smooth, bug-free navigation
-    ..* Adequate and appropriate seeds to demonstrate the feature
+      * Adequate styling
+      * Smooth, bug-free navigation
+      * Adequate and appropriate seeds to demonstrate the feature
   7. Profile Page
-    ..* Adequate styling
-    ..* Smooth, bug-free navigation
-    ..* Adequate and appropriate seeds to demonstrate the feature
+      * Adequate styling
+      * Smooth, bug-free navigation
+      * Adequate and appropriate seeds to demonstrate the feature
 
 ## Design Docs
 
