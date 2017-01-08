@@ -38,33 +38,26 @@ TODO: add link to live version of site
 
 ## Implementation Timeline
 
-Phase 1: Backend setup and Front End User Authentication (2 days)
+* Phase 1: Backend setup and Front End User Authentication (2 days)
+  * Objective: Functioning rails project with front-end Authentication
 
-Objective: Functioning rails project with front-end Authentication
+* Phase 2: Pictures Model, API, and components (2 days)
+  * Objective: Pictures can be posted, viewed, edited (captions) and destroyed through the API.
 
-Phase 2: Pictures Model, API, and components (2 days)
+* Phase 3: Profile Page (1 day)
+  * Objective: Profile Page displays profile picture, name and photos
 
-Objective: Pictures can be posted, viewed, edited (captions) and destroyed through the API.
+* Phase 4: Follows (1 days)
+  * Objective: Current user can follow other users either by clicking a button on one of their photos or on their profile page.
 
-Phase 3: Profile Page (1 day)
+* Phase 5: Home Feed (1 day)
+  * Objective: Display most recent photos from current user's follows on TogLink homepage.
 
-Objective: Profile Page displays profile picture, name and photos
-
-Phase 4: Follows (1 days)
-
-Objective: Current user can follow other users either by clicking a button on one of their photos or on their profile page.
-
-Phase 5: Home Feed (1 day)
-
-Objective: Display most recent photos from current user's follows on
-TogLink homepage.
-
-Phase 6: - infinite Scroll for Home Feed (1 day)
-
-objective: Add infinite scroll to home feed
+* Phase 6: - infinite Scroll for Home Feed (1 day)
+  * Objective: Add infinite scroll to home feed
 
 ## Bonus Features (TBD)
 
-Bonus: Tags
-Bonus: Discover
-Bonus: Notifications
+* Bonus: Tags
+* Bonus: Discover
+* Bonus: Notifications
