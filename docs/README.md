@@ -53,11 +53,12 @@ TODO: add link to live version of site
 * Phase 5: Home Feed (1 day)
   * Objective: Display most recent photos from current user's follows on TogLink homepage.
 
-* Phase 6: - infinite Scroll for Home Feed (1 day)
-  * Objective: Add infinite scroll to home feed
 
 ## Bonus Features (TBD)
 
+* Bonus: Infinite Scroll for Home Feed
 * Bonus: Tags
+* Bonus: Albums
+  - Each photo-item will include a button to add picture to album
 * Bonus: Discover
 * Bonus: Notifications
