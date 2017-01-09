@@ -12,6 +12,7 @@
 
 - `POST /api/users`
 - `PATCH /api/users`
+- `GET /api/users/:id`  
 
 ### Session
 
@@ -33,10 +34,3 @@
 - `GET /api/follows/:id`
 - `DELETE /api/follows/:id`
 - `GET /api/follows/:id/follow`
-
-
-### Tags
-
-- `GET /api/tags`
-- `POST /api/photos/:photo_id/tags`
-- `DELETE /api/photos/:photo_id/tags/:tag_name`
