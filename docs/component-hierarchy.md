@@ -43,7 +43,6 @@
 **PhotoDetailsContainer**
   * MainNav
   * PhotoDetails
-
   * (Bonus) SlideShowIndex
     * SlideShowIndexItem
 
