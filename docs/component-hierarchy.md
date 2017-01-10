@@ -52,10 +52,24 @@
     * EditForm
 
 **UploadContainer**
-  * CloudinaryUpload
+  * CloudinaryUploadWidget
 
 **(Bonus) SearchContainer**
   * MainNav
   * SearchNav
   * SearchIndex
     * SearchIndexItem
+
+    ## Routes
+
+|Path   | Component   |
+|-------|-------------|
+| "/sign-up" | "AuthFormContainer" |
+| "/sign-in" | "AuthFormContainer" |
+| "/home" | "HomeLoggedOutContainer" |
+| "/my-home" | "HomeLoggedInContainer" |
+| "/home/profile/:id" | "ProfileContainer" |
+| "/new-photos" | "UploadContainer" |
+| "/photos/:id" | "PhotoDetailsContainer" |
+|(BONUS) "/edit-photo" | "EditContainer" |
+|(BONUS) "/new-photos" | "UploadContainer" |
