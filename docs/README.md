@@ -12,21 +12,15 @@ TODO: add link to live version of site
   2. A production README
   3. Hosting on Heroku
   4. Post Pictures
-      * Adequate styling
-      * Smooth, bug-free navigation
-      * Adequate and appropriate seeds to demonstrate the feature
+      * Users can upload pictures with Cloudinary
   5. Follows
-      * Adequate styling
-      * Smooth, bug-free navigation
-      * Adequate and appropriate seeds to demonstrate the feature
+      * Users can follow and unfollow one another
   6. Home Feed
-      * Adequate styling
-      * Smooth, bug-free navigation
-      * Adequate and appropriate seeds to demonstrate the feature
+      * Gets populated with the photos of the current user's follows
+      * Upon clicking picture, it takes you to that photos show page
   7. Profile Page
-      * Adequate styling
-      * Smooth, bug-free navigation
-      * Adequate and appropriate seeds to demonstrate the feature
+      * Shows profile picture, username and cover photo
+      * Has tabs to view photos or about section
 
 ## Design Docs
 
@@ -42,7 +36,13 @@ TODO: add link to live version of site
   * Objective: Functioning rails project with front-end Authentication
 
 * Phase 2: Pictures Model, API, and components (2 days)
-  * Objective: Pictures can be posted, viewed, edited (captions) and destroyed through the API.
+  * Objective: Pictures can be posted & viewed.
+
+* Phase 3: Follows (1 days)
+  * Objective: Current user can follow other users either by clicking a button on one of their photos or on their profile page.
+
+* Phase 4: Home Feed (1 day)
+  * Objective: Display most recent photos from current user's follows on TogLink homepage.
 
 * Phase 3: Profile Page (1 day)
   * Objective: Profile Page displays profile picture, name and photos
@@ -50,12 +50,12 @@ TODO: add link to live version of site
 * Phase 4: Follows (1 days)
   * Objective: Current user can follow other users either by clicking a button on one of their photos or on their profile page.
 
-* Phase 5: Home Feed (1 day)
-  * Objective: Display most recent photos from current user's follows on TogLink homepage.
+
 
 
 ## Bonus Features (TBD)
 
+* Bonus: Photos can be Edited (captions) and destroyed through the API.
 * Bonus: Infinite Scroll for Home Feed
 * Bonus: Tags
 * Bonus: Albums
