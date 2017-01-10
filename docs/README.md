@@ -9,7 +9,7 @@ TODO: add link to live version of site
 #### TogLink is a web application inspired by 500px built using Ruby on Rails and React/Redux. It will include the following features with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
 
   1. New account creation, login, and guest/demo login
-  2. A production README, TODO: add this
+  2. A production README
   3. Hosting on Heroku
   4. Post Pictures
       * Adequate styling

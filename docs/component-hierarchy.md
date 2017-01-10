@@ -1,40 +1,62 @@
 ## Component Hierarchy
 
-**HomeContainer**
-  - main-nav
-  - home
-   * home-feed
-     * home-feed-item
-   * home-side-div
+**HomeLoggedOutContainer**
+  * HomeLoggedOut
+  * MainNav
+
+**MainNavContainer**
+    * MainNav
+      * (logged-out) LoginButton
+      * (logged-out) SignUpButton
+      * (logged-in) LogoutButton
+      * (logged-in) current-user-pic and username
+      * (logged-in) Logout-button
+      * (logged-in) Upload-button
+      * (logged-in) (Bonus) Notifications
+      * (logged-in) (Bonus) DiscoverButton
+      * (logged-in) (Bonus) SeachBar
+
+**HomeLoggedInContainer**
+  * MainNav
+  * HomeFeedContainer
+  * (Bonus) HomeSideContainer
+
+**HomeFeedContainer**
+ * HomeFeedIndex
+  * HomeFeedIndexItem
+    * (Bonus) Like-button
+    * (Bonus) Add-to-collection-button
 
 **AuthFormContainer**
- - auth-form
+  * AuthForm
 
 **ProfileContainer**
- - main-nav
- - profile
-  * profile-nav
-  * photos
-   * photo-item
+ * Profile
+ * MainNav
+ * ProfileTabs
+   * PhotosIndex
+    * PhotosIndexItem
+   * About
+   * (Bonus) Galleries
+
 
 **PhotoDetailsContainer**
- - slide-show
-  * slide-show-item
- - photo-details
- - main-nav
+  * MainNav
+  * PhotoDetails
 
- **EditContainer**
-  - main-nav
-  - edit
-   * edit-form
+  * (Bonus) SlideShowIndex
+    * SlideShowIndexItem
+
+ **(Bonus) EditContainer**
+  * MainNav
+  * EditFormContainer
+    * EditForm
 
 **UploadContainer**
-  - main-nav
-  - new
-   * new-form
+  * CloudinaryUpload
 
-**SearchContainer**
- - main-nav
- - search-nav
- - results
-  * photo-item
+**(Bonus) SearchContainer**
+  * MainNav
+  * SearchNav
+  * SearchIndex
+    * SearchIndexItem
