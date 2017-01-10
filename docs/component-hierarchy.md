@@ -64,10 +64,10 @@
 
 |Path   | Component   |
 |-------|-------------|
+| "/" | "HomeLoggedOutContainer" |
 | "/sign-up" | "AuthFormContainer" |
 | "/sign-in" | "AuthFormContainer" |
-| "/home" | "HomeLoggedOutContainer" |
-| "/my-home" | "HomeLoggedInContainer" |
+| "/home" | "HomeLoggedInContainer" |
 | "/home/profile/:id" | "ProfileContainer" |
 | "/new-photos" | "UploadContainer" |
 | "/photos/:id" | "PhotoDetailsContainer" |
