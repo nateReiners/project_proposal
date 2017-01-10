@@ -55,7 +55,7 @@ TODO: add link to live version of site
 
 ## Bonus Features (TBD)
 
-* Bonus: Photos can be Edited (captions) and destroyed through the API.
+* Bonus: Photo Edit (title/captions) and delete through the API.
 * Bonus: Infinite Scroll for Home Feed
 * Bonus: Tags
 * Bonus: Albums
