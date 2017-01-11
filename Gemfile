@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
   gem 'bcrypt', '~> 3.1.7'
   gem 'sqlite3'
+  gem 'rails_12factor'
+  gem 'newrelic_rpm'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
