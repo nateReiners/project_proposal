@@ -1,0 +1,25 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #99ccff;
+  border-bottom: 2px solid darkblue;
+}
+
+.login-signup > * {
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+a:hover {
+  color: black;
+}
+
+
+* {
+  border: 1px solid red;
+}
