@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background: #99ccff;
-  border-bottom: 2px solid darkblue;
+  padding: 5px;
+  background: linear-gradient(#99ccff, #999999);
+  border-bottom: 1px solid darkblue;
 }
 
 .login-signup > * {
@@ -13,6 +13,12 @@
   border-radius: 4px;
   padding: 5px;
   box-shadow: 2px 2px 2px #888888;
+}
+
+.logo {
+  margin-left: 10px;
+  width: 20vw;
+  content: image_url("Logo.png");
 }
 
 a:hover {
