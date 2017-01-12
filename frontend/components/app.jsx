@@ -1,19 +1,18 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
-import Slogan from './slogan/slogan';
+import Splash from './splash/splash';
 import DemoButtonContainer from './demo/demo_button_container';
+import { Link } from 'react-router';
 
 const App = ({ children }) => (
   <div>
     <div className="main-nav">
-      <div className="logo"></div>
+      <Link to="/">
+        <div className="logo"></div>
+      </Link>
       <GreetingContainer />
     </div>
-    <div className="slogan-div">
-      <h1>Where photographers connect</h1>
-      <h2>Share your work, and stay inspired.</h2>
-      <DemoButtonContainer />
-    </div>
+    <Splash />
     { children }
   </div>
 );

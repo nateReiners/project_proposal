@@ -3,6 +3,8 @@ import { Link, withRouter } from 'react-router';
 import DemoButtonContainer from '../demo/demo_button_container';
 import DemoButton from '../demo/demo_button';
 
+import Splash from '../splash/splash';
+
 class SessionForm extends React.Component {
   constructor(props) {
       super(props);
@@ -56,14 +58,16 @@ class SessionForm extends React.Component {
   render () {
     String.prototype.titleize = function() {
       return this.charAt(0).toUpperCase() + this.slice(1);
-    }
-
+    };
     return (
       <div className="login-form-container">
+        { Splash }
           <form onSubmit={this.handleSubmit}>
-            {this.renderErrors()}
             <div className="auth-form">
               <p>Please {this.props.formType.titleize()} or {this.navLink()}</p>
+              <div className="errors-div">
+                {this.renderErrors()}
+              </div>
               <label> Username:
                 <input type="text"
                       value={this.state.username}
@@ -79,7 +83,6 @@ class SessionForm extends React.Component {
               </label>
               <br/>
               <input className="submitButton" type="submit" value={this.props.formType.titleize()} />
-              <DemoButtonContainer />
             </div>
           </form>
       </div>
