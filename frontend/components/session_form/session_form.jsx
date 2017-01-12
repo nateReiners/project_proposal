@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+import DemoButtonContainer from '../demo/demo_button_container';
+import DemoButton from '../demo/demo_button';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -51,7 +53,6 @@ class SessionForm extends React.Component {
     );
   }
 
-
   render () {
     String.prototype.titleize = function() {
       return this.charAt(0).toUpperCase() + this.slice(1);
@@ -78,6 +79,7 @@ class SessionForm extends React.Component {
               </label>
               <br/>
               <input className="submitButton" type="submit" value={this.props.formType.titleize()} />
+              <DemoButton />
             </div>
           </form>
       </div>
