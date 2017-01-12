@@ -9,3 +9,4 @@
 
 User.create!(username: "randall cobb", password: "touchdown");
 User.create!(username: "aaron rodgers", password: "touchdown");
+User.create!(username: "Guest", password: "demopassword");

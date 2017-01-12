@@ -53,36 +53,33 @@ class SessionForm extends React.Component {
 
 
   render () {
+    String.prototype.titleize = function() {
+      return this.charAt(0).toUpperCase() + this.slice(1);
+    }
+
     return (
       <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          <br/>
-          <h2>Welcome to Toglink</h2>
-          <br/>
-          <h3>Where Photographers Connect and Share</h3>
-          <br/>
-          Please {this.props.formType} <br/>or<br/>{this.navLink()}
-
-          {this.renderErrors()}
-          <div className="login-form">
-            <br/>
-            <label> Username:
-              <input type="text"
-                    value={this.state.username}
-                    onChange={this.update("username")}
-                    className="login-input" />
-            </label>
-            <br/>
-            <label> Password:
-              <input type="password"
-                    value={this.state.password}
-                    onChange={this.update("password")}
-                    className="login-input" />
-            </label>
-            <br/>
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
+          <form onSubmit={this.handleSubmit}>
+            {this.renderErrors()}
+            <div className="auth-form">
+              <p>Please {this.props.formType.titleize()} or {this.navLink()}</p>
+              <label> Username:
+                <input type="text"
+                      value={this.state.username}
+                      onChange={this.update("username")}
+                      className="login-input" />
+              </label>
+              <br/>
+              <label> Password:
+                <input type="password"
+                      value={this.state.password}
+                      onChange={this.update("password")}
+                      className="login-input" />
+              </label>
+              <br/>
+              <input className="submitButton" type="submit" value={this.props.formType.titleize()} />
+            </div>
+          </form>
       </div>
     );
   }
