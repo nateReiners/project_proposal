@@ -14,6 +14,10 @@
   flex-direction: column;
   align-items: center;
 
+  .submitButton {
+    width: 100px;
+  }
+
   .errors-div {
     color: red;
     margin-bottom: 20px;
@@ -79,6 +83,7 @@
     a {
       font-family: sans-serif;
       color: white;
+      text-decoration: underline;
     }
 
     a:hover {
