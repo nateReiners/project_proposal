@@ -1,0 +1,18 @@
+.profile-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .profile-photos-div {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+    height: 40vh;
+    ul {
+
+    }
+    img {
+      width: 50px;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import Splash from './splash/splash';
 import SessionFormContainer from './session_form/session_form_container';
 import App from './app';
 import Home from './home/home';
+import Profile from './profile/profile';
 
 const Root = ({ store }) => {
 
@@ -31,6 +32,7 @@ const Root = ({ store }) => {
           <Route path="login" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn} />
           <Route path="signup" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn} />
           <Route path="home" component={Home} onEnter={_ensureLoggedIn}/>
+          <Route path="profile" component={Profile} onEnter={_ensureLoggedIn}/>
         </Route>
       </Router>
     </Provider>
