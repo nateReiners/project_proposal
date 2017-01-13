@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Router, hashHistory, withRouter } from 'react-router';
 
 class DemoButton extends React.Component {
   constructor(props) {
@@ -9,7 +9,8 @@ class DemoButton extends React.Component {
 
   guestLogin(e) {
     e.preventDefault();
-    this.props.loginGuest();
+    this.props.loginGuest()
+    .then(() => this.props.router.push('/home'));
   }
 
   render() {
@@ -20,4 +21,4 @@ class DemoButton extends React.Component {
 }
 
 
-export default DemoButton;
+export default withRouter(DemoButton);

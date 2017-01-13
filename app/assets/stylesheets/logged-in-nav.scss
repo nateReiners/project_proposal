@@ -1,0 +1,35 @@
+.logged-in-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: black;
+  border-bottom: 1px solid black;
+
+  .logo {
+    width: 200px;
+    padding: 20px;
+    height: 30px;
+    content: image_url("logo-black.png");
+  }
+
+  .logo:hover {
+    background: rgb(256, 256, 256);
+    background: rgba(256, 256, 256, .2);
+  }
+  .login-signup {
+    height: 100%;
+    a {
+      text-decoration: none;
+      font-family: sans-serif;
+      color: white;
+      padding: 27px;
+    }
+
+    a:hover {
+      background: rgb(256, 256, 256);
+      background: rgba(256, 256, 256, .2);
+    }
+  }
+
+}

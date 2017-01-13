@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router';
 import DemoButtonContainer from '../demo/demo_button_container';
 import DemoButton from '../demo/demo_button';
 
-import Splash from '../splash/splash';
+import LoginFormNav from '../main_nav/login-form-nav';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -61,7 +61,7 @@ class SessionForm extends React.Component {
     };
     return (
       <div className="login-form-container">
-        { Splash }
+        <LoginFormNav />
           <form onSubmit={this.handleSubmit}>
             <div className="auth-form">
               <p>Please {this.props.formType.titleize()} or {this.navLink()}</p>
@@ -88,7 +88,6 @@ class SessionForm extends React.Component {
       </div>
     );
   }
-
 }
 
 export default SessionForm;

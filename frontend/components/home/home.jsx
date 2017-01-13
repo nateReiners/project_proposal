@@ -1,10 +1,13 @@
 import React from 'react';
-
+import LoggedInNav from '../main_nav/logged-in_nav';
 
 const Home = () => {
   return (
     <div className="home-div">
-      <h1>This is the loggedin homepage</h1>
+      <LoggedInNav />
+      <h1>This is the logged-in homepage</h1>
     </div>
   );
 };
+
+export default Home;

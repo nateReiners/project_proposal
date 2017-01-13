@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { Router, hashHistory, withRouter } from 'react-router';
 
 const sessionLinks = () => (
   <nav className="login-signup">
@@ -8,10 +9,15 @@ const sessionLinks = () => (
   </nav>
 );
 
+const logoutAndRedirect = (logout) => () => {
+  logout();
+  hashHistory.push('/');
+};
+
 const personalGreeting = (currentUser, logout) => (
       <hgroup className="header-group">
     <h2 className="header-name">Hi, {currentUser.username}!</h2>
-    <button className="header-button" onClick={ logout }>Log Out</button>
+    <button className="header-button" onClick={logoutAndRedirect(logout)}>Log Out</button>
       </hgroup>
 );
 
@@ -19,4 +25,4 @@ const Greeting = ({ currentUser, logout }) => (
   currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
 );
 
-export default Greeting;
+export default withRouter(Greeting);
