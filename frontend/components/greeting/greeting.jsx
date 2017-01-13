@@ -5,7 +5,7 @@ import { Router, hashHistory, withRouter } from 'react-router';
 const sessionLinks = () => (
   <nav className="login-signup">
     <Link to="/login" activeClassName="current">Login</Link>
-    <Link to="/signup" activeClassName="current">Sign Up!</Link>
+    <Link to="/signup" activeClassName="current">Sign Up</Link>
   </nav>
 );
 
@@ -18,11 +18,18 @@ const openCloudinaryWidget = () => {
   alert("eventually this will open a sick widget");
 };
 
+const path = "http://betruewebdesign.com/img/avatar-300x300.png";
+
 const personalGreeting = (currentUser, logout) => (
       <hgroup className="header-group">
-    <h2 className="header-name">Hi, {currentUser.username}</h2>
+        <div className="profile-links-div">
+          <Link to="/profile">
+            <img className="header-profile-pic" src={path}></img>
+            <h2 className="header-username">{currentUser.username}</h2>
+          </Link>
+        </div>
     <button className="header-button" onClick={logoutAndRedirect(logout)}>Log Out</button>
-    <button className="upload-button" onClick={openCloudinaryWidget}> Upload Photos</button>
+    <button className="upload-button" onClick={openCloudinaryWidget}>Upload Photos</button>
       </hgroup>
 );
 

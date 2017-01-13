@@ -12,10 +12,10 @@ u2 = User.create!(username: "aaron rodgers", password: "touchdown")
 u3 = User.create!(username: "Guest", password: "demopassword")
 
 
-Photo.create!(author_id: u2.id, img_url: "https://s-media-cache-ak0.pinimg.com/236x/75/a9/3b/75a93b93a36c273d29f06fc49210da94.jpg")
+Photo.create!(author_id: u2.id, img_url: "https://s-media-cache-ak0.pinimg.com/236x/75/a9/3b/75a93b93a36c273d29f06fc49210da94.jpg", title: "Title number 1")
 
-Photo.create!(author_id: u1.id, img_url: "http://img.hi5messages.com/en/funny/36.jpg")
+Photo.create!(author_id: u1.id, img_url: "http://img.hi5messages.com/en/funny/36.jpg", title: "Title number 1")
 
-Photo.create!(author_id: u3.id, img_url: "http://4.bp.blogspot.com/-XBHVmMlvP4w/VmsqEm1zkeI/AAAAAAABhzE/6vxIKM9hUH4/s1600/funny-animals-190-02.jpg")
+Photo.create!(author_id: u3.id, img_url: "http://4.bp.blogspot.com/-XBHVmMlvP4w/VmsqEm1zkeI/AAAAAAABhzE/6vxIKM9hUH4/s1600/funny-animals-190-02.jpg", title: "Title number 1")
 
-Photo.create!(author_id: u1.id, img_url: "http://img.hi5messages.com/en/funny/36.jpg")
+Photo.create!(author_id: u1.id, img_url: "http://img.hi5messages.com/en/funny/36.jpg", title: "Title number 1")

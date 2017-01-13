@@ -1,14 +1,17 @@
 .logged-in-nav {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: transparent;
   color: black;
   border-bottom: 1px solid black;
-
+  * {
+    border: 1px solid red;
+  }
   .logo {
     width: 200px;
-    padding: 20px;
+    padding-left: 20px;
     height: 30px;
     content: image_url("logo-black.png");
   }
@@ -18,18 +21,52 @@
     background: rgba(256, 256, 256, .2);
   }
   .login-signup {
-    height: 100%;
     a {
       text-decoration: none;
       font-family: sans-serif;
       color: white;
-      padding: 27px;
     }
 
     a:hover {
       background: rgb(256, 256, 256);
       background: rgba(256, 256, 256, .2);
     }
+  }
+  button {
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(lightblue, blue);
+    border: black;
+  }
+  button:hover {
+    background: black;
+    color: white;
+  }
+
+  .header-group {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .profile-links-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      .header-profile-pic {
+        width: 40px;
+      }
+      a {
+        height: 100;
+      }
+      a:hover {
+        border-radius: 15px;
+        background: yellow;
+      }
+    }
+
   }
 
 }

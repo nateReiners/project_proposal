@@ -1,0 +1,23 @@
+.photo-detail-main {
+  height: 100vh;
+
+  .photo-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+  .side-div {
+    padding: 20px;
+
+    ul {
+      list-style-type: none;
+    }
+  }
+  figure {
+    margin: 10px;
+  }
+  * {
+    border: 1px solid red;
+  }
+}
