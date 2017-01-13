@@ -1,4 +1,15 @@
-.home-div {
+.home-main {
   height: 100vh;
   background: transparent;
+}
+
+.home-div {
+  width: 100vw;
+}
+
+.home-feed-div {
+  width: 300px;
+  height: 400px;
+  background-color: lightblue;
+  margin: 40px;
 }
