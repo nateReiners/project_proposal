@@ -1,9 +1,12 @@
 class Api::PhotosController < ApplicationController
 
   def index
-
+    @photos = Photo.all
   end
 
+  def show
+    @photo = Photo.find(params[:id])
+  end
 
   def create
     @photo = Photo.new(photo_params)
@@ -24,7 +27,7 @@ class Api::PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photo).permit(:user_id, :img_url)
+    params.require(:photo).permit(:author_id, :img_url)
   end
 
 end

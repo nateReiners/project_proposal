@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const PhotosIndexItem = ({ photos, router }) => (
-  <li className="photos-index-item">
-    <Link to={`/photos/${photos.id}`}>
-      <span>{photos.id}</span>
-      <img src={photos.image_url} alt={photos.name} />
-      <span>{photos.name}</span>
+const PhotosIndexItem = ({ photo, router }) => (
+  <li key={photo.id} className="photos-index-item">
+    <Link to={`/photos/${photo.id}`}>
+      <span>{photo.title}</span>
+      <div className="feed-img">
+        <img src={photo.img_url} alt={photo.title} />
+      </div>
     </Link>
   </li>
 );

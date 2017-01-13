@@ -5,11 +5,31 @@
 
 .home-div {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .home-feed-div {
-  width: 300px;
-  height: 400px;
+  width: 75vw;
   background-color: lightblue;
   margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  ul {
+    list-style-type: none;
+  }
+
+
+  img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    }
 }

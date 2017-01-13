@@ -5,7 +5,6 @@ import { selectAllPhotos } from '../../reducers/selectors';
 
 const mapStateToProps = state => ({
   photos: selectAllPhotos(state),
-  // loading: state.loading.indexLoading
 });
 
 const mapDispatchToProps = dispatch => ({
