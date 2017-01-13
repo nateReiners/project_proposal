@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router';
+import { Router, hashHistory, Link, withRouter } from 'react-router';
 import DemoButtonContainer from '../demo/demo_button_container';
 import DemoButton from '../demo/demo_button';
 
@@ -32,7 +32,7 @@ class SessionForm extends React.Component {
     console.log(e);
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user).then(() => this.redirect());
+    this.props.processForm(user).then(() => hashHistory.push('/home'));
   }
 
   navLink() {

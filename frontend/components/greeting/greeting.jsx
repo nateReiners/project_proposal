@@ -16,7 +16,7 @@ const logoutAndRedirect = (logout) => () => {
 
 const personalGreeting = (currentUser, logout) => (
       <hgroup className="header-group">
-    <h2 className="header-name">Hi, {currentUser.username}!</h2>
+    <h2 className="header-name">Hi, {currentUser.username}</h2>
     <button className="header-button" onClick={logoutAndRedirect(logout)}>Log Out</button>
       </hgroup>
 );

@@ -1,0 +1,12 @@
+.header-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+
+  * {
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+}
