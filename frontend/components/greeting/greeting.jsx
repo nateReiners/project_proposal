@@ -14,10 +14,15 @@ const logoutAndRedirect = (logout) => () => {
   hashHistory.push('/');
 };
 
+const openCloudinaryWidget = () => {
+  alert("eventually this will open a sick widget");
+};
+
 const personalGreeting = (currentUser, logout) => (
       <hgroup className="header-group">
     <h2 className="header-name">Hi, {currentUser.username}</h2>
     <button className="header-button" onClick={logoutAndRedirect(logout)}>Log Out</button>
+    <button className="upload-button" onClick={openCloudinaryWidget}> Upload Photos</button>
       </hgroup>
 );
 
