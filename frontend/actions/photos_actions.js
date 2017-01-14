@@ -11,8 +11,8 @@ export const requestAllPhotos = () => (dispatch) => {
 		.then(photos => dispatch(receiveAllPhotos(photos)));
 };
 
-export const requestSinglePhotos = (id) => (dispatch) => {
-	return APIUtil.fetchSinglePhotos(id).then(photo => {
+export const requestSinglePhoto = (id) => (dispatch) => {
+	return APIUtil.fetchSinglePhoto(id).then(photo => {
 		dispatch(receiveSinglePhoto(photo));
 		return photo;
 	});

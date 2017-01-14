@@ -10,8 +10,8 @@ const sessionLinks = () => (
 );
 
 const logoutAndRedirect = (logout) => () => {
-  logout();
-  hashHistory.push('/');
+  logout()
+  .then(() => hashHistory.push('/'));
 };
 
 const openCloudinaryWidget = () => {

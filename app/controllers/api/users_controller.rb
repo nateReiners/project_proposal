@@ -1,6 +1,6 @@
 class Api::UsersController < ApplicationController
 
-  def show
+  def shows
   end
 
   def create

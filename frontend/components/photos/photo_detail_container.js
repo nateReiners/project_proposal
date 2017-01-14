@@ -1,13 +1,14 @@
 import { connect } from 'react-redux';
 import PhotoDetail from './photo_detail';
-import { fetchSinglePhoto } from '../../util/photos_api_util';
+import { requestSinglePhoto, requestAllPhotos } from '../../actions/photos_actions';
 
 const mapStateToProps = ({ photos }, ownState) => ({
-  photo: photos[ownState.params.id]
+  photo: photos[ownState.params.id] || {}
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchSinglePhoto: id => dispatch(fetchSinglePhoto(id))
+  requestSinglePhoto: id => dispatch(requestSinglePhoto(id)),
+  requestAllPhotos: () => dispatch(requestAllPhotos())
 });
 
 export default connect(

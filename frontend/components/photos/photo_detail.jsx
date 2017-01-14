@@ -3,6 +3,9 @@ import LoggedInNav from '../main_nav/logged-in_nav';
 
 class PhotoDetail extends React.Component {
 
+  componentDidMount() {
+    this.props.requestAllPhotos();
+  }
 
   render () {
     const photo = this.props.photo;
