@@ -5,72 +5,75 @@
   align-items: center;
   background: transparent;
   color: black;
-  border-bottom: 1px solid black;
-  * {
-    border: 1px solid red;
-  }
-  .logo {
-    width: 200px;
-    padding-left: 20px;
-    height: 30px;
-    content: image_url("logo-black.png");
-  }
+  border-bottom: 1px solid lightgray;
+  padding-left: 3vw;
+  padding-right: 3vw;
 
-  .logo:hover {
-    background: rgb(256, 256, 256);
-    background: rgba(256, 256, 256, .2);
-  }
-  .login-signup {
-    a {
-      text-decoration: none;
-      font-family: sans-serif;
+
+    .logo {
+      width: 100px;
+      height: 15px;
+      padding: 10px;
+      content: image_url("logo-black.png");
+    }
+
+    .logo:hover {
+      background: lightgray;
+    }
+
+    button {
+      padding: 2px;
+      border-radius: 5px;
+      color: white;
+      background: linear-gradient(lightblue, blue);
+      border: black;
+    }
+    button:hover {
+      background: black;
       color: white;
     }
 
-    a:hover {
-      background: rgb(256, 256, 256);
-      background: rgba(256, 256, 256, .2);
-    }
-  }
-  button {
-    border-radius: 5px;
-    color: white;
-    background: linear-gradient(lightblue, blue);
-    border: black;
-  }
-  button:hover {
-    background: black;
-    color: white;
-  }
-
-  .header-group {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-    .profile-links-div {
+    .header-group {
+      height: 100%;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       flex-direction: row;
-      padding: 0;
-      .header-profile-pic {
-        width: 40px;
-        height: 40px;
-      }
-      a {
-        padding: 0;
+
+      .profile-links-div {
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0;
+
+        .header-profile-pic {
+          width: 30px;
+          height: 30px;
+          border-radius: 50px;
+          padding: 0;
+        }
+
+        .header-username {
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        a {
+          padding: 0;
+          display: flex;
+          flex-direction: row;
+        }
+
+        a:hover {
+          background: lightgray;
+        }
       }
-      a:hover {
-        border-radius: 15px;
-        background: yellow;
+      * {
+        margin-right: 10px;
       }
     }
-
-  }
 
 }

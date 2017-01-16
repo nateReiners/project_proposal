@@ -1,0 +1,38 @@
+.login-form-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding-right: 3vw;
+  padding-left: 3vw;
+
+  .login-signup {
+    height: 100%;
+    display: flex;
+
+    a {
+      padding: 8px;
+      text-decoration: none;
+      font-family: sans-serif;
+      color: white;
+      background: green;
+      border-right: 1px solid white;
+    }
+
+
+    a:hover {
+      filter: brightness(1.2);
+      color: white;
+    }
+  }
+  .logo {
+    padding: 10px;
+    width: 100px;
+    height: 15px;
+    content: image_url("logo-black.png");
+  }
+
+  .logo:hover {
+    background: lightgray;
+  }
+}

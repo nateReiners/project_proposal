@@ -21,16 +21,16 @@ const openCloudinaryWidget = () => {
 const path = "http://betruewebdesign.com/img/avatar-300x300.png";
 
 const personalGreeting = (currentUser, logout) => (
-      <hgroup className="header-group">
+  <hgroup className="header-group">
+      <Link to="/profile">
         <div className="profile-links-div">
-          <Link to="/profile">
-            <img className="header-profile-pic" src={path}></img>
-            <h2 className="header-username">{currentUser.username}</h2>
-          </Link>
+          <img className="header-profile-pic" src={path}></img>
+          <h2 className="header-username">{currentUser.username}</h2>
         </div>
+      </Link>
     <button className="header-button" onClick={logoutAndRedirect(logout)}>Log Out</button>
     <button className="upload-button" onClick={openCloudinaryWidget}>Upload Photos</button>
-      </hgroup>
+  </hgroup>
 );
 
 const Greeting = ({ currentUser, logout }) => (
