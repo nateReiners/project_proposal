@@ -1,5 +1,5 @@
 export const fetchAllPhotos = () => {
-  console.log("fetchedallphotos");
+  console.log("hit fetchAllPhotos ajax request");
   return $.ajax({
     method: 'GET',
     url: 'api/photos'

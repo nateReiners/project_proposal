@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import PhotosIndexItem from './photos_index_item';
+import { Router, hashHistory, Link, withRouter } from 'react-router';
 
 class PhotosIndex extends Component {
   componentDidMount() {
     this.props.requestAllPhotos();
+  }
+
+  profilePhotos() {
+    const profilePhotos = [];
+    this.props.photos.forEach(photo => {
+      if (photo.author_id === currentUser.id) {
+        profilePhotos.push(photo);
+      }
+    })
+    return profilePhotos;
   }
 
   render() {
