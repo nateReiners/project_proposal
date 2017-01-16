@@ -6,7 +6,7 @@ import { Router } from 'react-router';
 
 const mapStateToProps = state => ({
   photos: selectAllPhotos(state),
-  currentUser: state.session.currentUser
+  currentUser: state.session.currentUser,
 });
 
 const mapDispatchToProps = (dispatch) => {

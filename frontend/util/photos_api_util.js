@@ -13,10 +13,10 @@ export const fetchSinglePhoto = (id) => {
   });
 };
 
-export const createPhoto = (Photo) => {
+export const createPhoto = (photo) => {
   return $.ajax({
     method: 'POST',
-    url: 'api/photos/',
-    data: { Photo }
+    url: 'api/photos',
+    data: { photo }
   });
 };

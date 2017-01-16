@@ -1,7 +1,11 @@
 class Api::PhotosController < ApplicationController
 
   def index
-    @photos = Photo.all
+    @photos = []
+    current_user.following.each do |user|
+      @photos += user.photos
+    end
+    render :index
   end
 
   def show

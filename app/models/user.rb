@@ -31,8 +31,12 @@ class User < ActiveRecord::Base
     class_name: "Follow"
 
   has_many :following,
-    through: :follower_relationships,
+    through: :following_relationships,
     source: :following
+
+  has_many :photos,
+    foreign_key: :author_id,
+    class_name: "Photo"
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
