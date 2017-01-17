@@ -2,7 +2,8 @@ import { merge } from 'lodash';
 
 import {
   RECEIVE_ALL_PHOTOS,
-  RECEIVE_NEW_PHOTOS
+  RECEIVE_NEW_PHOTOS,
+  RECEIVE_NEW_PHOTO
 } from '../actions/photos_actions';
 
 

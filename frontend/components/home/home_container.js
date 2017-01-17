@@ -1,14 +1,14 @@
 import Home from './home';
-import { login, logout, signup } from '../../actions/session_actions';
+import { requestAllPhotos } from '../../actions/photos_actions';
 import { connect } from 'react-redux';
 
-const mapStateToProps = (state) => {
-  
-};
+const mapStateToProps = (state) => ({
+  photos: state.photos
+});
 
-const mapDispatchToProps= dispatch => {
-
-};
+const mapDispatchToProps= dispatch => ({
+  requestAllPhotos: () => dispatch(requestAllPhotos())
+});
 
 export default connect(
   mapStateToProps,

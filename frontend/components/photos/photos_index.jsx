@@ -5,21 +5,6 @@ import { Router, hashHistory, Link, withRouter } from 'react-router';
 class PhotosIndex extends Component {
   constructor(props) {
     super(props);
-    this.state = { photos: [] };
-  }
-
-  componentDidMount() {
-    this.props.requestAllPhotos();
-  }
-
-  profilePhotos() {
-    const profilePhotos = [];
-    this.props.photos.forEach(photo => {
-      if (photo.author_id === currentUser.id) {
-        profilePhotos.push(photo);
-      }
-    })
-    return profilePhotos;
   }
 
   render() {

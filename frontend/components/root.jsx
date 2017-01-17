@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Splash from './splash/splash';
 import SessionFormContainer from './session_form/session_form_container';
 import App from './app';
-import Home from './home/home';
+import HomeContainer from './home/home_container';
 import ProfileContainer from './profile/profile_container';
 import PhotoDetailContainer from './photos/photo_detail_container';
 
@@ -32,7 +32,7 @@ const Root = ({ store }) => {
           <IndexRoute component={ Splash } onEnter={_redirectIfLoggedIn}/>
           <Route path="login" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn} />
           <Route path="signup" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn} />
-          <Route path="home" component={Home} onEnter={_ensureLoggedIn}/>
+          <Route path="home" component={ HomeContainer } onEnter={_ensureLoggedIn}/>
           <Route path="users/:id" component={ProfileContainer} onEnter={_ensureLoggedIn}/>
           <Route path="profile" component={ProfileContainer} onEnter={_ensureLoggedIn}/>
           <Route path="photos/:id" component={PhotoDetailContainer} onEnter={_ensureLoggedIn}/>

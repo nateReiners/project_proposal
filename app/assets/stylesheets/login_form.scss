@@ -16,11 +16,11 @@
   align-items: center;
   justify-content: center;
 
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-       -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein .5s; /* Firefox < 16 */
+      -ms-animation: fadein .5s; /* Internet Explorer */
+       -o-animation: fadein .5s; /* Opera < 12.1 */
+          animation: fadein .5s;
 
   .swap-form-message {
     color: black;
@@ -29,14 +29,13 @@
 
   .errors-div {
     color: red;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 30px;
+
     height: 30px;
     ul {
       list-style-type: none;
-      font-size: 12px;
-      li:nth-child(2) {
-        margin-bottom: 10px;
-      }
+      font-size: 14px;
     }
   }
   }
@@ -69,12 +68,6 @@
     justify-content: center;
     text-align: center;
      background: #F2F2F2;
-
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
 
     form {
       display: flex;

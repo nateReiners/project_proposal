@@ -5,14 +5,11 @@ import { selectAllPhotos } from '../../reducers/selectors';
 import { Router } from 'react-router';
 
 const mapStateToProps = state => ({
-  photos: selectAllPhotos(state),
   currentUser: state.session.currentUser,
 });
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    requestAllPhotos: () => dispatch(requestAllPhotos())
-    };
+  return {};
 };
 
 export default connect(

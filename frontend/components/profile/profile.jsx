@@ -5,13 +5,20 @@ import PhotosIndexContainer from '../photos/photos_index_container';
 class Profile extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { user: "", photos: ""};
   }
 
   componentDidMount() {
     const userID = this.props.params.id || this.props.currentUser.id;
-    const user = this.props.requestSingleUser(userID);
-    const imgs = user.photos;
+    this.props.requestSingleUser(userID);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const userID = this.props.params.id || this.props.currentUser.id;
+    const nextUserID = nextProps.params.id || nextProps.currentUser.id
+    if (userID === nextUserID) {
+    } else {
+      this.props.requestSingleUser(nextUserID);
+    }
   }
 
   render() {
@@ -19,12 +26,14 @@ class Profile extends React.Component {
       <div className="profile-div">
         <LoggedInNav />
         <div className="cover-photo">
+          <h1>{this.props.user.username}'s Cover Photo Will Go Here</h1>
         </div>
         <div className="profile-info">
+          <h1>This is {this.props.user.username}'s profile page (profile pic/info will go here)</h1>
         </div>
-        This is the Profile component!
+        <h1>{this.props.user.username}'s Photos</h1>
         <div className="profile-photos">
-          <PhotosIndexContainer />
+          <PhotosIndexContainer photos={this.props.user.photos || []} />
         </div>
       </div>
     );

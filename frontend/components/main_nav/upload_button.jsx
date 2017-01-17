@@ -10,7 +10,6 @@ class UploadButton extends React.Component {
 
 
   postPhoto(photo) {
-    debugger
     let img = {img_url: photo.url, author_id: this.props.currentUserID};
     this.props.createPhoto(img);
   }

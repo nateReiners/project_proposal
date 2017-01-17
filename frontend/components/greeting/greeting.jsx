@@ -34,7 +34,7 @@ const logoutAndRedirect = (logout) => () => {
 
 const personalGreeting = (currentUser, logout) => (
   <hgroup className="header-group">
-      <Link to="/profile">
+      <Link to={`users/${currentUser.id}`}>
         <div className="profile-link">
           <div className="profile-icon"></div>
           <p>{currentUser.username}</p>

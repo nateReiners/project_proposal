@@ -4,8 +4,8 @@ import { requestSingleUser } from '../../actions/users_actions';
 import { Router } from 'react-router';
 
 const mapStateToProps = state => ({
-  user: requestSingleUser(state),
-  currentUser: state.session.currentUser,
+  user: state.user,
+  currentUser: state.session.currentUser
 });
 
 const mapDispatchToProps = (dispatch) => {
