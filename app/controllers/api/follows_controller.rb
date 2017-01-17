@@ -10,6 +10,7 @@ class FollowsController < ApplicationController
     if @follow.save
     else
       render json: @follow.errors.full_messages, status: 422
+    end
   end
 
   def destroy

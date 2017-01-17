@@ -2,7 +2,7 @@ class Api::UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    render "api/users/#{@user.id}" unless @user.id === current_user.id
+    render "api/users/show" unless @user.id === current_user.id
   end
 
   def create

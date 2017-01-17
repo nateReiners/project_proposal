@@ -9,7 +9,7 @@ class Profile extends React.Component {
   }
 
   componentDidMount() {
-    const userID = this.props.params.id;
+    const userID = this.props.params.id || this.props.currentUser.id;
     const user = this.props.requestSingleUser(userID);
     const imgs = user.photos;
   }
