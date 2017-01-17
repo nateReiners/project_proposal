@@ -7,7 +7,7 @@
   background: white;
   border: 1px solid lightgray;
   margin-top: 1vh;
-  padding: 1vh;
+  padding: 1.5vh;
   border-radius: 3px;
   width: 300px;
   height: 400px;
@@ -24,35 +24,35 @@
 
   .swap-form-message {
     color: black;
-    background: red;
     height: 100px;
   }
 
   .errors-div {
     color: red;
-    margin-bottom: 20px;
+    padding: 20px;
+    height: 30px;
     ul {
       list-style-type: none;
-      li {
-        margin-bottom: 5px;
+      font-size: 12px;
+      li:nth-child(2) {
+        margin-bottom: 10px;
       }
     }
   }
   }
 
   .submitButton {
-    width: 206px;
+    width: 256px;
     color: white;
     font-weight: bold;
     background: linear-gradient(#00b806, darkgreen);
-    box-shadow: 1px 1px 0px 0px black;
     padding: 10px 20px 10px 20px;
     border-radius: 3px;
     border: black;
     filter: brightness(.9);
   }
   .submitButton:hover {
-    filter: brightness(1.1);
+    filter: brightness(1);
   }
 
   .form-message {
@@ -68,7 +68,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-     background: #eeebe6;
+     background: #F2F2F2;
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
@@ -83,7 +83,7 @@
       padding: 30px;
 
       h1 {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 10px;
         margin-top: 10px;
       }
@@ -122,7 +122,7 @@
         background-color: white;
         text-align: left;
         border: 1px solid darkgray;
-        width: 200px;
+        width: 250px;
         height: 30px;
         margin-bottom: 12px;
       }

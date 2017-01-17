@@ -1,8 +1,11 @@
 .photo-detail-main {
-  height: 100vh;
+  height: auto;
+  width: auto;
   background: black;
 
   .photo-detail {
+    position: absolute;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;

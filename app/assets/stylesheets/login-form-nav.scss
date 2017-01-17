@@ -5,6 +5,7 @@
   background: white;
   padding-right: 3vw;
   padding-left: 3vw;
+  border-bottom: 1px solid lightgray;
 
   .signup {
     height: 100%;
@@ -28,7 +29,7 @@
   }
   .logo {
     padding: 10px;
-    width: 180px;
+    width: 160px;
     height: 25px;
     content: image_url("logo-black.png");
   }

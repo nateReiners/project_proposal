@@ -52,5 +52,8 @@
         filter: brightness(1);
       }
     }
+    .photos-index-item:hover {
+      box-shadow: 1px 1px 1px black;
+    }
   }
 }
