@@ -35,11 +35,24 @@ class SessionForm extends React.Component {
     this.props.processForm(user).then(() => hashHistory.push('/home'));
   }
 
-  navLink() {
+  swapFormMessage() {
     if (this.props.formType === "login") {
-      return <Link to="/signup">Sign Up</Link>;
+      return (<p>Don't have an account? <Link to="/signup">Sign Up</Link></p>);
     } else {
-      return <Link to="/login">Login</Link>;
+      return (<p>Already have an account? <Link to="/login">Login</Link></p>);
+    }
+  };
+
+  welcomeMessage() {
+    if (this.props.formType === "login") {
+      return (<div className="form-message"><h1>Log In to TogLink</h1></div>);
+    } else {
+      return (
+        <div className="form-message">
+          <h1>Join TogLink</h1>
+          <h3>Upload and enjoy amazing photos</h3>
+        </div>
+      );
     }
   }
 
@@ -64,25 +77,24 @@ class SessionForm extends React.Component {
         <LoginFormNav />
           <form onSubmit={this.handleSubmit}>
             <div className="auth-form">
-              <p>Please {this.props.formType.titleize()} or {this.navLink()}</p>
+                {this.welcomeMessage()}
               <div className="errors-div">
                 {this.renderErrors()}
               </div>
-              <label> Username:
+              <label> Email or Username
                 <input type="text"
                       value={this.state.username}
                       onChange={this.update("username")}
                       className="login-input" />
               </label>
-              <br/>
-              <label> Password:
+              <label> Password
                 <input type="password"
                       value={this.state.password}
                       onChange={this.update("password")}
                       className="login-input" />
               </label>
-              <br/>
               <input className="submitButton" type="submit" value={this.props.formType.titleize()} />
+              <p>{this.swapFormMessage()}</p>
             </div>
           </form>
       </div>
