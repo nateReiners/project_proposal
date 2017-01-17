@@ -1,21 +1,32 @@
 .photo-detail-main {
   height: 100vh;
 
+
   .photo-detail {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80vw;
     margin: 40px;
   }
   .side-div {
-    padding: 20px;
+    margin: 30px;
+    width: 10vw;
 
     ul {
       list-style-type: none;
     }
   }
   figure {
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    img {
+      padding: 10px;
+      width: 100%;
+    }
   }
   * {
     border: 1px solid red;

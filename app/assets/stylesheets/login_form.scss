@@ -17,6 +17,12 @@
   align-items: center;
   justify-content: center;
 
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+
 
   .submitButton {
     width: 100px;
@@ -54,7 +60,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-     background: #FEF1E9;
+     background: lightblue;
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
@@ -64,9 +70,10 @@
 
     form {
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 600px;
+      height: 100vh;
+      padding: 50px;
+
       p {
         font-size: 20px;
         padding-bottom: 30px;
@@ -82,16 +89,16 @@
       }
 
       .login-input {
-        font-size: 18;
+        font-size: 18px;
         border-radius: 3px;
         background-color: white;
         text-align: left;
+        border: 1px solid lightblue;
         width: 200px;
         height: 30px;
       }
 
       .login-input:enabled {
-        font-size: 18px;
         border: 1px solid lightblue;
       }
 

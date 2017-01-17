@@ -1,22 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { Router, hashHistory, withRouter } from 'react-router';
+import UploadButtonContainer from '../main_nav/upload_button_container';
 
-const sessionLinks = () => (
-  <nav className="login-signup">
-    <Link to="/login" activeClassName="current">Login</Link>
-    <Link to="/signup" activeClassName="current">Sign Up</Link>
-  </nav>
-);
+const sessionLinks = () => {
+  const hash = location.hash.slice(1);
+  if (hash === '/login') {
+    return (
+      <nav className="signup">
+        <Link to="/signup" activeClassName="current">Sign Up</Link>
+      </nav>
+    );
+  } else if (hash === '/signup'){
+      return (
+        <nav className="login">
+          <Link to="/login" activeClassName="current">Login</Link>
+        </nav>
+      );
+  } else {
+    return (
+      <nav className="login-signup">
+        <Link to="/signup" activeClassName="current">Sign Up</Link>
+        <Link to="/login" activeClassName="current">Login</Link>
+      </nav>
+    );
+  }
+};
 
 const logoutAndRedirect = (logout) => () => {
   logout()
   .then(() => hashHistory.push('/'));
 };
 
-const openCloudinaryWidget = () => {
-  alert("eventually this will open a sick widget");
-};
 
 const path = "http://betruewebdesign.com/img/avatar-300x300.png";
 
@@ -29,8 +44,8 @@ const personalGreeting = (currentUser, logout) => (
         </div>
       </Link>
     <button className="header-button" onClick={logoutAndRedirect(logout)}>Log Out</button>
-    <button className="upload-button" onClick={openCloudinaryWidget}>Upload Photos</button>
-  </hgroup>
+    <UploadButtonContainer />
+</hgroup>
 );
 
 const Greeting = ({ currentUser, logout }) => (

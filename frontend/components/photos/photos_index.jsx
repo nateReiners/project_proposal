@@ -3,6 +3,11 @@ import PhotosIndexItem from './photos_index_item';
 import { Router, hashHistory, Link, withRouter } from 'react-router';
 
 class PhotosIndex extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { photos: [] };
+  }
+
   componentDidMount() {
     this.props.requestAllPhotos();
   }

@@ -3,16 +3,53 @@
   display: flex;
   flex-direction: column;
 
-  .profile-photos-div {
+  .cover-photo {
+    height: 200px;
+    border-bottom: 1px solid black;
+  }
+
+  .profile-info {
+    height: 200px;
+  }
+
+  .profile-photos {
+    border: 1px solid black;
+    padding: 20px;
     display: flex;
     justify-content: baseline;
     flex-direction: row;
-    height: 40vh;
-    ul {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 20px;
 
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
     }
-    img {
-      width: 50px;
+
+    .photos-index-item {
+      height: 150px;
+      width: 150px;
+      margin: 2px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .author_id {
+        padding: 5px;
+      }
+      .author_id:hover {
+        background: lightgreen;
+      }
+      img {
+        width: 125px;
+        margin: 2px;
+      }
+    }
+    .photos-index-item:hover {
+      filter: brightness(.7);
     }
   }
 }

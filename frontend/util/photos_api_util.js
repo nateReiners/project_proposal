@@ -14,6 +14,7 @@ export const fetchSinglePhoto = (id) => {
 };
 
 export const createPhoto = (photo) => {
+  console.log("hit createPhoto ajax request")
   return $.ajax({
     method: 'POST',
     url: 'api/photos',

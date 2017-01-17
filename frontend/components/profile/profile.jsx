@@ -7,8 +7,12 @@ const Profile = () => {
   return (
     <div className="profile-div">
       <LoggedInNav />
+      <div className="cover-photo">
+      </div>
+      <div className="profile-info">
+      </div>
       This is the Profile component!
-      <div className="profile-photos-div">
+      <div className="profile-photos">
         <PhotosIndexContainer />
       </div>
     </div>
