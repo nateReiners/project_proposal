@@ -32,19 +32,19 @@ const logoutAndRedirect = (logout) => () => {
   .then(() => hashHistory.push('/'));
 };
 
-
-const path = "http://betruewebdesign.com/img/avatar-300x300.png";
-
 const personalGreeting = (currentUser, logout) => (
   <hgroup className="header-group">
       <Link to="/profile">
-        <div className="profile-links-div">
-          <img className="header-profile-pic" src={path}></img>
-          <h2 className="header-username">{currentUser.username}</h2>
+        <div className="profile-link">
+          <div className="profile-icon"></div>
+          <p>{currentUser.username}</p>
         </div>
       </Link>
-    <button className="header-button" onClick={logoutAndRedirect(logout)}>Log Out</button>
     <UploadButtonContainer />
+    <Link onClick={logoutAndRedirect(logout)} className="exit-link">
+      <div className="exit-icon"></div>
+      <p>Logout</p>
+    </Link>
 </hgroup>
 );
 

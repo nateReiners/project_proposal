@@ -1,5 +1,4 @@
 .profile-div {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 
@@ -14,7 +13,7 @@
 
   .profile-photos {
     border: 1px solid black;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: baseline;
     flex-direction: row;
@@ -29,27 +28,29 @@
     }
 
     .photos-index-item {
-      height: 150px;
+      height: 120px;
       width: 150px;
-      margin: 2px;
-      border: 1px solid black;
+      margin: 5px;
+      border: 1px solid lightgray;
+      box-sizing: border-box;
       display: flex;
+      overflow: hidden;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .author_id {
-        padding: 5px;
-      }
-      .author_id:hover {
-        background: lightgreen;
+
+      .author_id, .title {
+        display: none;
       }
       img {
-        width: 125px;
-        margin: 2px;
+        flex-shrink: 0;
+        min-height: 100%;
+        max-width: 100%;
+        filter: brightness(.85);
       }
-    }
-    .photos-index-item:hover {
-      filter: brightness(.7);
+      img:hover {
+        filter: brightness(1);
+      }
     }
   }
 }

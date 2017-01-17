@@ -13,7 +13,7 @@
 }
 
 .home-feed-div {
-  margin: 20px;
+  width: 70vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,6 @@
   padding-bottom: 8vh;
 
   .photos-index {
-    width: 800px;
     .photos-index-item {
       font-family: sans-serif;
       margin-bottom: 50px;
@@ -40,7 +39,7 @@
         font-weight: bold;
 
         width: 100%;
-        padding: 10px;
+        padding: 5px;
         border-bottom: 1px solid lightgray;
       }
       .author_id:hover {
@@ -48,7 +47,7 @@
       }
       .title {
         font-size: 20px;
-        padding: 10px;
+        padding: 5px;
       }
       img {
         width: 100%;

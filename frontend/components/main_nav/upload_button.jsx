@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 class UploadButton extends React.Component {
   constructor(props) {
@@ -29,8 +30,11 @@ class UploadButton extends React.Component {
 
   render() {
     return (
-      <button onClick={this.upload}>Upload Image</button>
-    )
+      <Link onClick={this.upload} className="upload-link">
+        <div className="upload-icon"></div>
+        <p>Upload</p>
+      </Link>
+    );
   }
 }
 
