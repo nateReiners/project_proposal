@@ -6,18 +6,18 @@ import {
 } from '../actions/follows_actions';
 
 
-const PhotosReducer = (state = {}, action) => {
+const FollowsReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_ALL_FOLLOWS:
-      return merge({}, action.photos);
+      return merge({}, action.follows);
     case RECEIVE_NEW_FOLLOWS:
       return merge({}, state, {
-        [action.photos.id]: action.photos
+        [action.follows.id]: action.follows
       });
     default:
       return state;
   }
 };
 
-export default PhotosReducer;
+export default FollowsReducer;
