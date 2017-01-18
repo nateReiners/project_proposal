@@ -29,14 +29,14 @@ class Profile extends React.Component {
       return (
         <div className="profile-div">
           <LoggedInNav />
-          <div className="cover-photo">
-            <h1>{this.props.user.username}'s Cover Photo Will Go Here</h1>
+          <div className="cover-photo-div">
+            <img src={this.props.user.cover_img_url}></img>
           </div>
-          <div className="profile-info">
+          <div className="profile-info-div">
+            <img src={this.props.user.profile_img_url}></img>
             <FollowButtonContainer followerId={this.props.currentUser.id} followingId={this.props.params.id}/>
-            <h1>This is {this.props.user.username}'s profile page (profile pic/info will go here)</h1>
           </div>
-          <h1>{this.props.user.username}'s Photos</h1>
+          <h1>Photos</h1>
           <div className="profile-photos">
             <PhotosIndexContainer photos={this.props.user.photos || []} />
           </div>

@@ -27,7 +27,6 @@ const UserReducer = (state = {}, action) => {
       return newState;
     case RECEIVE_NEW_FOLLOW:
       const newbState = merge({}, state);
-      debugger
       merge(newbState.follows, action.follow);
       return newbState;
     default:

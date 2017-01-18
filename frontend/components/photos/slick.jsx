@@ -9,7 +9,6 @@ class SimpleSlider extends React.Component {
   }
 
   render () {
-    debugger
     var settings = {
       dots: true,
       infinite: true,

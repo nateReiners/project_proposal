@@ -23,6 +23,7 @@
   padding-bottom: 8vh;
 
   .photos-index {
+    display: flex;
     .photos-index-item {
       filter: brightness(.97);
 
@@ -40,7 +41,6 @@
 
       .author_id, .title {
         display: none;
-        transition-timing-function: ease;
       }
 
       img {
