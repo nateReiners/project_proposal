@@ -34,6 +34,8 @@
       flex-direction: column;
       height: 30px;
       width: 30px;
+      transition: 0.5s ease;
+
       .exit-icon {
         content: image_url("exit.png");
         height: 25px;

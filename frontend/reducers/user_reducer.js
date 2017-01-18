@@ -6,6 +6,7 @@ import {
   RECEIVE_SINGLE_USER,
 } from '../actions/users_actions';
 import {   RECEIVE_NEW_PHOTO } from '../actions/photos_actions';
+import { RECEIVE_NEW_FOLLOW } from '../actions/follows_actions';
 
 // add receive new photo
 
@@ -21,10 +22,14 @@ const UserReducer = (state = {}, action) => {
     case RECEIVE_SINGLE_USER:
       return action.user;
     case RECEIVE_NEW_PHOTO:
-      // merge new photo into state?
-      break;
-    debugger
-      break;
+      const newState = merge({}, state);
+      newState.photos.unshift(action.photo);
+      return newState;
+    case RECEIVE_NEW_FOLLOW:
+      const newbState = merge({}, state);
+      debugger
+      merge(newbState.follows, action.follow);
+      return newbState;
     default:
       return state;
   }

@@ -18,12 +18,13 @@ export const requestSingleFollow = (id) => (dispatch) => {
 	});
 };
 
-export const createFollow = follow => dispatch => (
-	APIUtil.createFollow(follow).then(newFollow => {
+export const createFollow = follow => dispatch => {
+	console.log("createFollow action hit!");
+	return APIUtil.createFollow(follow).then(newFollow => {
 		dispatch(receiveNewFollow(newFollow));
 		return newFollow;
 	}).fail(err => dispatch(receiveFollowsErrors(err.responseJSON)))
-);
+};
 
 
 
