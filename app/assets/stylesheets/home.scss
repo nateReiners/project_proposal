@@ -24,40 +24,31 @@
 
   .photos-index {
     .photos-index-item {
-      font-family: sans-serif;
-      margin-bottom: 50px;
-      width: 100%;
-      height: 100%;
-      background: white;
-      box-sizing: border-box;
+      filter: brightness(.97);
+
+      height: 50vw;
+      width: 50vw;
+      margin: 10px;
       border: 1px solid lightgray;
       box-sizing: border-box;
       display: flex;
+      overflow: hidden;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
 
-      .author_id {
-        font-size: 20px;
-        font-weight: bold;
+      .author_id, .title {
+        display: none;
+        transition-timing-function: ease;
+      }
 
-        width: 100%;
-        padding: 5px;
-        border-bottom: 1px solid lightgray;
-      }
-      .author_id:hover {
-        color: #62615F;
-      }
-      .title {
-        font-size: 20px;
-        padding: 5px;
-      }
       img {
-        width: 100%;
-        filter: brightness(.9);
-      }
-      img:hover {
-        filter: brightness(1);
+        flex-shrink: 0;
+        min-height: 100%;
+        min-width: 100%;
+        max-height: 120%;
+        max-width: 160%;
       }
     }
 
@@ -72,6 +63,39 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+    }
+
+    .photos-index-item:hover {
+      filter: brightness(1);
+
+      .author_id {
+        display: block;
+        padding: 10px;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        background: rgb(204, 204, 204);
+        background: rgba(204, 204, 204, 0.7);
+        transition: ease;
+      }
+
+      .title {
+        padding: 5px;
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        width: 100%;
+        background: white;
+        background: rgb(204, 204, 204);
+        transition: ease;
+        background: rgba(204, 204, 204, 0.7);
+      }
+      .author_id:hover, .title:hover {
+        background: rgb(204, 204, 204);
+        background: rgba(204, 204, 204, 0.9);
       }
     }
   }
