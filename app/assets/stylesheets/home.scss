@@ -15,26 +15,42 @@
 }
 
 .home-feed-div {
-  width: 70vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 8vh;
 
   .photos-index {
+    padding: 50px;
     display: flex;
-    .photos-index-item {
-      filter: brightness(.97);
+    justify-content: center;
+    width: 100%;
 
-      height: 50vw;
-      width: 50vw;
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+    .photos-index-item {
+      filter: brightness(.95);
+
+      height: 240px;
+      width: 320px;
       margin: 10px;
-      border: 1px solid lightgray;
+      border: 1px solid gray;
       box-sizing: border-box;
       display: flex;
       overflow: hidden;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       position: relative;
@@ -44,31 +60,21 @@
       }
 
       img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-shrink: 0;
         min-height: 100%;
         min-width: 100%;
         max-height: 120%;
-        max-width: 160%;
+        max-width: 120%;
       }
     }
 
-    ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
 
     .photos-index-item:hover {
       filter: brightness(1);
-
+      font-family: sans-serif;
       .author_id {
         display: block;
         padding: 10px;
@@ -78,7 +84,6 @@
         width: 100%;
         background: rgb(204, 204, 204);
         background: rgba(204, 204, 204, 0.7);
-        transition: ease;
       }
 
       .title {
@@ -90,7 +95,6 @@
         width: 100%;
         background: white;
         background: rgb(204, 204, 204);
-        transition: ease;
         background: rgba(204, 204, 204, 0.7);
       }
       .author_id:hover, .title:hover {

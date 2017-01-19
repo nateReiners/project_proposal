@@ -1,5 +1,6 @@
 import React from 'react';
 import LoggedInNav from '../main_nav/logged-in_nav';
+import { Link } from 'react-router';
 
 class PhotoDetail extends React.Component {
 
@@ -18,17 +19,14 @@ class PhotoDetail extends React.Component {
             <img src={photo.img_url} alt={photo.title} />
             <div className="side-div">
               <ul>
-                <li>Title: {photo.title}</li>
-                <li>Author Id: {photo.author_id}</li>
+                <li className="title">{photo.title}</li>
+
+                <Link to={`/users/${photo.author_id}`} className="photographer_link">
+                <li>
+                    <h3>By {photo.author_name}</h3>
+                </li>
+              </Link>
               </ul>
-              <div className="comments">
-                <h2>Comments</h2>
-                <ul>
-                  <li>1 great pic</li>
-                  <li>2 amazing quality </li>
-                  <li>3 best pic ever</li>
-                </ul>
-              </div>
             </div>
           </figure>
         </section>

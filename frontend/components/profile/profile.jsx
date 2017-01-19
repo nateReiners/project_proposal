@@ -2,6 +2,7 @@ import React from 'react';
 import LoggedInNav from '../main_nav/logged-in_nav';
 import PhotosIndexContainer from '../photos/photos_index_container';
 import FollowButtonContainer from '../follow/follow_button_container';
+import ProfileFormContainer from './profile_form_container';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -33,13 +34,16 @@ class Profile extends React.Component {
             <img src={this.props.user.cover_img_url}></img>
           </div>
           <div className="profile-info-div">
-            <img src={this.props.user.profile_img_url}></img>
-            <FollowButtonContainer followerId={this.props.currentUser.id} followingId={this.props.params.id}/>
+            <div className="profile-photo-div">
+              <img src={this.props.user.profile_img_url}></img>
+            </div>
           </div>
+          <FollowButtonContainer followerId={this.props.currentUser.id} followingId={this.props.params.id}/>
           <h1>Photos</h1>
           <div className="profile-photos">
             <PhotosIndexContainer photos={this.props.user.photos || []} />
           </div>
+          <ProfileFormContainer />
         </div>
       );
     }

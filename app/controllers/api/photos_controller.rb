@@ -5,6 +5,7 @@ class Api::PhotosController < ApplicationController
     current_user.following.each do |user|
       @photos += user.photos
     end
+    @photos += current_user.photos
     render :index
   end
 

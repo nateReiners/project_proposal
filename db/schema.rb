@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170118014402) do
+ActiveRecord::Schema.define(version: 20170119002808) do
 
   create_table "follows", force: :cascade do |t|
     t.integer  "follower_id",  null: false
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20170118014402) do
     t.string   "cover_img_url"
     t.string   "email"
     t.boolean  "following"
+    t.text     "about"
   end
 
 end

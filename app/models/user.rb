@@ -49,6 +49,10 @@ class User < ActiveRecord::Base
     self.password_digest = BCrypt::Password.create(password)
   end
 
+  def is_followed_by?(user = {})
+    self.followers.include?(user)
+  end
+
   def valid_password?(password)
     BCrypt::Password.new(self.password_digest).is_password?(password)
   end

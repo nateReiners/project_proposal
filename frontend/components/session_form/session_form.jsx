@@ -22,6 +22,12 @@ class SessionForm extends React.Component {
     }
   }
 
+  componentWillReceiveProps(newState) {
+    if (newState.formType != this.props.formType) {
+      this.setState({ username: "", password: "" });
+    }
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -94,7 +100,7 @@ class SessionForm extends React.Component {
                       className="login-input" />
               </label>
               <input className="submitButton" type="submit" value={this.props.formType.titleize()} />
-              <p>{this.swapFormMessage()}</p>
+              {this.swapFormMessage()}
             </div>
           </form>
       </div>

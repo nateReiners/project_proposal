@@ -25,6 +25,9 @@ export const createUser = user => dispatch => (
 	}).fail(err => dispatch(receiveUsersErrors(err.responseJSON)))
 );
 
+export const updateUser = user => dispatch => (
+	APIUtil.updateUser(user).then(updatedUser => dispatch(receiveSingleUser(updatedUser)))
+);
 
 
 export const receiveAllUsers = users => ({
