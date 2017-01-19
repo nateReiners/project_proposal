@@ -1,6 +1,8 @@
 .profile-div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .cover-photo-div {
     width: 100%;
@@ -23,7 +25,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     background: lightblue;
     position: relative;
 
@@ -37,6 +38,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
   }
 

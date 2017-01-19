@@ -19,9 +19,9 @@ class FollowButton extends React.Component {
 
   render() {
     return (
-      <Link onClick={this.toggleFollow} className="follow-link">
+      <button onClick={this.toggleFollow} className="follow-button">
         <div className="follow-icon">Follow!</div>
-      </Link>
+      </button>
     );
   }
 }

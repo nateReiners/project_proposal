@@ -12,7 +12,8 @@ class ProfileForm extends React.Component {
       about: this.props.currentUser.about,
       email: this.props.currentUser.email,
       profile_img_url: this.props.currentUser.profile_img_url,
-      cover_img_url: this.props.currentUser.cover_img_url
+      cover_img_url: this.props.currentUser.cover_img_url,
+      id: this.props.currentUser.id
     };
 
     this.handleSubmit.bind(this);
@@ -31,9 +32,9 @@ class ProfileForm extends React.Component {
   coverUploadWidget() {
   cloudinary.openUploadWidget({
     cloud_name: 'durooeqnc',
-                 upload_preset: 'cover_photo' },
+                 upload_preset: 'irbes1bu' },
                  (error, result) => {
-    this.setState({cover_photo_url: result[0].secure_url});
+    this.setState({cover_img_url: result[0].secure_url});
    });
  }
 
@@ -41,7 +42,7 @@ class ProfileForm extends React.Component {
   cloudinary.openUploadWidget(
     { cloud_name: 'durooeqnc', upload_preset: 'profile'},
     (error, result) => {
-    this.setState({profile_pic_url: result[0].secure_url});
+    this.setState({profile_img_url: result[0].secure_url});
    });
  }
 
@@ -78,20 +79,29 @@ class ProfileForm extends React.Component {
 
     return (
         <div className="profile-form">
+          <div className="header">
+            <div className="cover-photo">
+              <img src={coverImgUrl}></img>
+              <button className="cover-upload-btn" onClick={this.coverUploadWidget}>
+                Change cover photo
+              </button>
+            </div>
 
-          <div className="cover-photo" style={{backgroundImage: `url('${coverImgUrl}')`, height: "150px", width: "600px"}} >
-            <div className="camera"></div>
-            <div>Change your cover photo</div>
-          </div>
-          <div className="profile-photo"
-                style={{backgroundImage: `url('${profileImgUrl}')`,
-                height: "110px", width: "110px", margin: "-55px auto 0px auto"}} >
-            <div className="camera"></div>
+            <div className="profile-photo">
+              <img src={profileImgUrl}></img>
+                <button className="profile-upload-btn" onClick={this.profileUploadWidget}>
+                  Change profile picture
+                </button>
+            </div>
           </div>
 
-          <div className="form-fields">
 
           <form onSubmit={this.handleSubmit}>
+            <label>Username
+              <input
+                value={this.state.username}
+                onChange={this.update('username')} />
+            </label>
             <label>First Name
               <input
                 type="text"
@@ -104,6 +114,11 @@ class ProfileForm extends React.Component {
                 value={this.state.last_name}
                 onChange={this.update('last_name')} />
             </label>
+            <label>Email
+              <input
+                value={this.state.email}
+                onChange={this.update('email')} />
+            </label>
             <label>About
               <textarea
                 value={this.state.about}
@@ -115,7 +130,6 @@ class ProfileForm extends React.Component {
             </div>
 
           </form>
-          </div>
       </div>
   );
   }

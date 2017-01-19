@@ -25,6 +25,7 @@ p5 = Photo.create!(author_id: u2.id, img_url: "http://payload336.cargocollective
 p4 = Photo.create!(author_id: u1.id, img_url: "http://payload336.cargocollective.com/1/17/574234/9036878/DSC_0017-copy_1250.JPG", title: "Special Flower")
 p11 = Photo.create!(author_id: u7.id, img_url: "https://cdn.pixabay.com/photo/2016/10/22/20/34/two-types-of-wine-1761613_960_720.jpg", title: "Wine and Grapes")
 p7 = Photo.create!(author_id: u7.id, img_url: "http://payload337.cargocollective.com/1/17/574234/9042538/DSCF3362_1_1250.jpg", title: "Curves")
+p7 = Photo.create!(author_id: u7.id, img_url: "http://plusquotes.com/images/quotes-img/cool_cat.jpg", title: "Cool Cat")
 
 
 p9 = Photo.create!(author_id: u1.id, img_url: "https://cdn.pixabay.com/photo/2016/11/14/15/29/hummingbird-1823829_960_720.jpg", title: "Hummingbird")

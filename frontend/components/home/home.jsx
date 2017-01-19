@@ -14,8 +14,9 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home-main">
+      <div>
         <LoggedInNav />
+      <div className="home-main">
         <div className="home-div">
           <h1>This is the logged-in homepage</h1>
           <div className="home-feed-div">
@@ -23,6 +24,7 @@ class Home extends React.Component {
             <PhotosIndexContainer photos={ values(this.props.photos) || [] } />
           </div>
         </div>
+      </div>
       </div>
     );
   }

@@ -1,0 +1,116 @@
+.profile-form {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  margin: 30px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    height: 150px;
+
+
+  .cover-photo {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    .cover-upload-btn {
+      display: none;
+    }
+
+    .cover-upload-btn:hover {
+      filter: brightness(.8);
+    }
+
+    img {
+      flex-shrink: 0;
+      width: 100%;
+    }
+  }
+
+  .cover-photo:hover {
+    .cover-upload-btn {
+      display: block;
+      width: 100%;
+      background: rgba(0, 0, 0, .5);
+      color: white;
+      display: block;
+      position: absolute;
+      padding-top: 128px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .profile-photo {
+    margin-top: 26px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+
+    img {
+      height: 100px;
+    }
+    .profile-upload-btn {
+      display: none;
+    }
+  }
+
+  .profile-photo:hover {
+    .profile-upload-btn {
+      background: rgba(0, 0, 0, .5);
+      padding: 30px;
+      color: white;
+      display: block;
+      position: absolute;
+    }
+  }
+}
+
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+      label {
+        font-family: sans-serif;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        input {
+          width: 200px;
+          height: 18px;
+        }
+
+        textarea {
+          width: 300px;
+          height: 100px;
+        }
+      }
+
+      .submitButton {
+        width: 50px;
+        height: 20px;
+        margin: 20px;
+      }
+
+  }
+
+}

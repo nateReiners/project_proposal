@@ -16,7 +16,7 @@ class Profile extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     const userID = this.props.params.id || this.props.currentUser.id;
-    const nextUserID = nextProps.params.id || nextProps.currentUser.id
+    const nextUserID = nextProps.params.id || nextProps.currentUser.id;
     if (userID === nextUserID) {
     } else {
       this.props.requestSingleUser(nextUserID);
@@ -28,8 +28,9 @@ class Profile extends React.Component {
       return (<div></div>)
     } else {
       return (
-        <div className="profile-div">
+        <div>
           <LoggedInNav />
+        <div className="profile-div">
           <div className="cover-photo-div">
             <img src={this.props.user.cover_img_url}></img>
           </div>
@@ -37,13 +38,14 @@ class Profile extends React.Component {
             <div className="profile-photo-div">
               <img src={this.props.user.profile_img_url}></img>
             </div>
+            <FollowButtonContainer followerId={this.props.currentUser.id} followingId={this.props.params.id}/>
           </div>
-          <FollowButtonContainer followerId={this.props.currentUser.id} followingId={this.props.params.id}/>
-          <h1>Photos</h1>
           <div className="profile-photos">
+            <h1>Photos</h1>
             <PhotosIndexContainer photos={this.props.user.photos || []} />
           </div>
           <ProfileFormContainer />
+        </div>
         </div>
       );
     }
