@@ -37,7 +37,7 @@ const personalGreeting = (currentUser, logout) => (
       <Link to={`users/${currentUser.id}`}>
         <div className="profile-link">
           <div className="profile-icon"></div>
-          <p>{currentUser.username}</p>
+          <p>{currentUser.first_name}</p>
         </div>
       </Link>
     <UploadButtonContainer />

@@ -97,11 +97,6 @@ class ProfileForm extends React.Component {
 
 
           <form onSubmit={this.handleSubmit}>
-            <label>Username
-              <input
-                value={this.state.username}
-                onChange={this.update('username')} />
-            </label>
             <label>First Name
               <input
                 type="text"

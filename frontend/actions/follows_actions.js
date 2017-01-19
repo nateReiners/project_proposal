@@ -2,7 +2,7 @@ export const RECEIVE_ALL_FOLLOWS    = 'RECEIVE_ALL_FOLLOWS';
 export const RECEIVE_SINGLE_FOLLOW = 'RECEIVE_SINGLE_FOLLOW';
 export const CREATE_FOLLOW         = 'CREATE_FOLLOW';
 export const RECEIVE_NEW_FOLLOW    = 'RECEIVE_NEW_FOLLOW';
-export const RECEIVE_FOLLOWS_ERRORS = 'RECEIVE_FOLLOWS_ERRORS';
+export const REMOVE_FOLLOW = 'REMOVE_FOLLOW';
 
 import * as APIUtil from '../util/follows_api_util';
 
@@ -26,7 +26,17 @@ export const createFollow = follow => dispatch => {
 	}).fail(err => dispatch(receiveFollowsErrors(err.responseJSON)))
 };
 
+export const destroyFollow = id => dispatch => {
+	console.log("destroyFollow action hit!");
+	return APIUtil.deleteFollow(id).then(deletedFollow => {
+		dispatch(receiveSingleFollow(deletedFollow));
+	})
+};
 
+export const removeFollow = follow => ({
+	type: REMOVE_FOLLOW,
+	follow
+})
 
 export const receiveAllFollows = follows => ({
 	type: RECEIVE_ALL_FOLLOWS,
@@ -41,9 +51,4 @@ export const receiveSingleFollow = follow => ({
 export const receiveNewFollow = follow => ({
 	type: RECEIVE_NEW_FOLLOW,
 	follow
-});
-
-export const receiveFollowsErrors = errors => ({
-	type: RECEIVE_FOLLOWS_ERRORS,
-	errors
 });

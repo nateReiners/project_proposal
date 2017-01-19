@@ -1,21 +1,17 @@
 export const createFollow = (follow) => {
+  console.log("createFollow APIUtil hit!");
   return $.ajax({
     method: 'POST',
-    url: 'api/follows',
+    url: `api/follows`,
     data: {follow}
   });
 };
 
-export const fetchAllFollows = () => {
-  return $.ajax({
-    method: "GET",
-    url: 'api/follows'
-  });
-};
-
-export const destroyFollow = (id) => {
+export const deleteFollow = (userId) => {
+  console.log("deleteFollow APIUtil hit!");
   return $.ajax({
     method: 'DELETE',
-    url: `api/follows/${id}`
+    url: `api/users/${userId}/follow`,
+    data: {userId}
   });
 };

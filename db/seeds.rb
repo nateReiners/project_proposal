@@ -9,7 +9,7 @@
 
 u1 = User.create!(username: "David Larson", password: "touchdown", profile_img_url: "https://pickaface.net/assets/images/slides/slide2.png", cover_img_url: "https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg")
 u2 = User.create!(username: "Bill Dobson", password: "touchdown", profile_img_url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Avatar_girl_face.png", cover_img_url: "https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg")
-u3 = User.create!(first_name: "Jane", last_name: "Doe", username: "Guest", password: "demopassword", profile_img_url: "http://www.freedigitalphotos.net/images/previews/do-you-like-my-new-handbag-100335166.jpg", cover_img_url: "https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg")
+u3 = User.create!(username: "Guest", first_name: "Jane", last_name: "Doe", password: "demopassword", profile_img_url: "http://www.freedigitalphotos.net/images/previews/do-you-like-my-new-handbag-100335166.jpg", cover_img_url: "https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg")
 u4 = User.create!(username: "Susan Cole", password: "touchdown", profile_img_url: "http://www.freedigitalphotos.net/images/previews/do-you-like-my-new-handbag-100335166.jpg", cover_img_url: "https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg")
 u5 = User.create!(username: "Sarah Johnson", password: "touchdown", )
 u6 = User.create!(username: "Quinten Lacy", password: "touchdown", profile_img_url: "http://www.freedigitalphotos.net/images/previews/handsome-guy-operating-laptop-100228357.jpg")

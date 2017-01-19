@@ -83,18 +83,30 @@
       box-shadow: 5px 5px 10px black;
 
       .author_id {
-        display: block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
         padding: 10px;
         position: absolute;
         bottom: 50px;
         left: 0;
-        width: 100%;
         background: rgb(204, 204, 204);
         background: rgba(204, 204, 204, 0.7);
+
+        .author_img {
+          width: 30px;
+          height: 30px;
+          overflow: hidden;
+          border-radius: 50px;
+          margin-right: 5px;
+        }
       }
 
       .title {
         padding: 5px;
+        padding-left: 10px;
         display: block;
         position: absolute;
         bottom: 15px;
@@ -104,7 +116,7 @@
         background: rgb(204, 204, 204);
         background: rgba(204, 204, 204, 0.7);
       }
-      .author_id:hover, .title:hover {
+      .author_id:hover {
         background: rgb(204, 204, 204);
         background: rgba(204, 204, 204, 1);
       }

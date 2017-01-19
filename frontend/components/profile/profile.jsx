@@ -24,6 +24,13 @@ class Profile extends React.Component {
   }
 
   render() {
+    let form;
+    if (this.props.params.id == this.props.currentUser.id) {
+      form = <ProfileFormContainer />;
+    } else {
+      form = <div></div>;
+    }
+
     if (this.props.currentUser === null) {
       return (<div></div>)
     } else {
@@ -44,7 +51,7 @@ class Profile extends React.Component {
             <h1>Photos</h1>
             <PhotosIndexContainer photos={this.props.user.photos || []} />
           </div>
-          <ProfileFormContainer />
+          {form}
         </div>
         </div>
       );
