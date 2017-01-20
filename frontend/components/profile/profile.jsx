@@ -23,6 +23,11 @@ class Profile extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    console.log("UNMOUNTED PROFILE")
+    this.props.clearUser();
+  }
+
   render() {
 
     const defaultCoverImg = "https://res.cloudinary.com/durooeqnc/image/upload/v1484904698/xvljib9zmhm-david-chalifoux_dm8s69.jpg";
@@ -57,7 +62,10 @@ class Profile extends React.Component {
 
     if (this.props.currentUser === null) {
       return (<div></div>)
+    } else if (this.props.user === null) {
+      return (<div></div>)
     } else {
+
       return (
         <div>
           <LoggedInNav />
