@@ -1,9 +1,17 @@
-export const fetchAllPhotos = (lastId) => {
-  console.log("hit fetchAllPhotos ajax request");
+export const fetchFeedPhotos = () => {
+  console.log("hit fetchFeedPhotos ajax request");
+  return $.ajax({
+    method: 'GET',
+    url: 'api/photos'
+  });
+};
+
+export const fetchAllPhotos = () => {
+  console.log("hit fetchFeedPhotos ajax request");
   return $.ajax({
     method: 'GET',
     url: 'api/photos',
-    data: {lastId}
+    data: {all: true}
   });
 };
 
@@ -20,15 +28,5 @@ export const createPhoto = (photo) => {
     method: 'POST',
     url: 'api/photos',
     data: { photo }
-  });
-};
-
-
-export const fetchPhotos = (lastId) => {
-  console.log("hit fetchPhotos ajax request");
-  return $.ajax({
-    method: 'GET',
-    url: 'api/photos',
-    data: {lastId}
   });
 };

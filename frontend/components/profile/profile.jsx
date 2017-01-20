@@ -25,10 +25,15 @@ class Profile extends React.Component {
 
   componentWillUnmount() {
     console.log("UNMOUNTED PROFILE")
-    this.props.clearUser();
   }
 
   render() {
+
+    if (this.props.currentUser) {
+
+    } else {
+      return (<div></div>)
+    }
 
     const defaultCoverImg = "https://res.cloudinary.com/durooeqnc/image/upload/v1484904698/xvljib9zmhm-david-chalifoux_dm8s69.jpg";
     const defaultProfileImg = "https://res.cloudinary.com/durooeqnc/image/upload/v1484895748/WmvM0_bpj2mj.png";

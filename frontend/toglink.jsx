@@ -8,7 +8,7 @@ import * as apiUTIL from './util/follows_api_util';
 import * as APIutil from './util/users_api_util';
 
 document.addEventListener("DOMContentLoaded", () => {
-  window.fetchAllPhotos = APIUtil.fetchAllPhotos;
+  window.fetchFeedPhotos = APIUtil.fetchFeedPhotos;
   window.createPhoto = APIUtil.createPhoto;
   window.createFollow = apiUTIL.createFollow;
   window.fetchAllFollows = apiUTIL.fetchAllFollows;

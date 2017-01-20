@@ -13,6 +13,7 @@ import { RECEIVE_NEW_FOLLOW, REMOVE_FOLLOW } from '../actions/follows_actions';
 const UserReducer = (state = {}, action) => {
   Object.freeze(state);
   let newState = merge({}, state);
+  let clearUserState = (state: {user: null});
 
   switch (action.type) {
     case RECEIVE_ALL_USERS:
