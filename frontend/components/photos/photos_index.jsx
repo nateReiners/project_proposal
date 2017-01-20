@@ -7,6 +7,8 @@ class PhotosIndex extends Component {
     super(props);
   }
 
+  
+
   render() {
     const photos = this.props.photos;
     return (

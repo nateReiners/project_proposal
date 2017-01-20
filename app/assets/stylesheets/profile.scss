@@ -10,7 +10,7 @@
   .cover-photo-div {
     margin-top: 50px;
     width: 100%;
-    height: 28vh;
+    height: 33vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,26 +20,24 @@
     overflow: hidden;
 
     .name {
-      font-size: 28px;
+      font-size: 3vw;
       font-family: 'Didact Gothic', sans-serif;
       font-weight: bold;
       position: absolute;
-      top: 210px;
+      bottom: 1vw;
       color: white;
     }
 
     .cover-img {
-      flex-shrink: 0;
-      min-height: 100%;
-      min-width: 100%;
-      max-width: 120%;
+      position: absolute;
+      width: 100%;
     }
 
     .profile-photo-div {
       position: absolute;
-      top: 25px;
-      height: 180px;
-      width: 180px;
+      bottom: 5vw;
+      height: 20vw;
+      width: 20vw;
       border-radius: 50%;
       overflow: hidden;
       display: flex;
@@ -47,7 +45,8 @@
       align-items: center;
 
       .profile-img {
-  
+        width: 100%;
+        height: 100%;
       }
     }
     .buttons-div {
@@ -56,20 +55,19 @@
       align-items: center;
       flex-direction: column;
       position: absolute;
-      bottom: 20px;
-      left: 20px;
-      width: 100px;
+      bottom: 1vw;
+      left: 3vw;
+      width: 10vw;
 
       .follow-button {
         width: 100%;
         padding: 10px;
-        margin: 10px;
         border-radius: 5px;
         color: white;
         font-family: sans-serif;
         background: green;
         border: black;
-        font-size: 14px;
+        font-size: 1.8vw;
         padding: 5px 10px 5px 10px;
       }
 
@@ -80,14 +78,13 @@
       }
 
       a {
-        margin: 0px;
         display: flex;
         width: 100%;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 1.8vw;
         padding: 5px 10px 5px 10px;
-        margin: 10px;
+        margin: 1vw;
         border-radius: 5px;
         color: white;
         font-family: sans-serif;
@@ -99,13 +96,6 @@
         font-weight: bold;
         box-shadow: 1px 1px 1px black;
       }
-    }
-  }
-
-  .cover-photo-div:hover {
-    .about-div {
-      max-height: 500px;
-      transition: max-height 1s ease-in;
     }
   }
 

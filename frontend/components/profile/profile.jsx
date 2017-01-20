@@ -25,7 +25,7 @@ class Profile extends React.Component {
 
   render() {
 
-    const defaultCoverImg = "http://res.cloudinary.com/durooeqnc/image/upload/v1484895917/HkTMcmlMOUQ_h8aeth.jpg";
+    const defaultCoverImg = "http://res.cloudinary.com/durooeqnc/image/upload/v1484904698/xvljib9zmhm-david-chalifoux_dm8s69.jpg";
     const defaultProfileImg = "http://res.cloudinary.com/durooeqnc/image/upload/v1484895748/WmvM0_bpj2mj.png";
 
     let coverImgUrl;
@@ -36,8 +36,8 @@ class Profile extends React.Component {
       }
 
     let profileImgUrl;
-    if (this.props.currentUser.profile_img_url) {
-      profileImgUrl = this.props.currentUser.profile_img_url;
+    if (this.props.user.profile_img_url) {
+      profileImgUrl = this.props.user.profile_img_url;
     } else {
       profileImgUrl = defaultProfileImg;
     }

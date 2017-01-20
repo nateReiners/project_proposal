@@ -9,6 +9,20 @@ class Api::PhotosController < ApplicationController
     render :index
   end
 
+#infinite scroll attempt
+
+  # def index
+  #   @count = params[:lastId].to_i
+  #   all_photos = []
+  #   current_user.following.each do |user|
+  #     all_photos += user.photos
+  #   end
+  #   all_photos += current_user.photos
+  #   @photos = all_photos.limit(15).offset(params[:lastId])
+  #   render :index
+  # end
+
+
   def show
     @photo = Photo.find(params[:id])
   end

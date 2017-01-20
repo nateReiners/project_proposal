@@ -13,7 +13,6 @@ class PhotoDetail extends React.Component {
 
     return (
       <div className="photo-detail-main">
-        <LoggedInNav />
         <section className="photo-detail">
           <h1 className="title">"{photo.title}" by {photo.author_name}</h1>
           <figure>

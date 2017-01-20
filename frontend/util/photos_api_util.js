@@ -1,8 +1,9 @@
-export const fetchAllPhotos = () => {
+export const fetchAllPhotos = (lastId) => {
   console.log("hit fetchAllPhotos ajax request");
   return $.ajax({
     method: 'GET',
-    url: 'api/photos'
+    url: 'api/photos',
+    data: {lastId}
   });
 };
 
@@ -19,5 +20,15 @@ export const createPhoto = (photo) => {
     method: 'POST',
     url: 'api/photos',
     data: { photo }
+  });
+};
+
+
+export const fetchPhotos = (lastId) => {
+  console.log("hit fetchPhotos ajax request");
+  return $.ajax({
+    method: 'GET',
+    url: 'api/photos',
+    data: {lastId}
   });
 };
