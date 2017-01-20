@@ -15,7 +15,7 @@ const PhotosIndexItem = ({ photo, router }) => {
         </div>
         <h3 className="author_name">{photo.author_name}</h3>
       </Link>
-      <h3 className="title">Title: {photo.title}</h3>
+      <h3 className="title">{photo.title}</h3>
     </li>
   );
 }

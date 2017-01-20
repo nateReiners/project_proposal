@@ -97,10 +97,12 @@
         left: 0;
         background: rgb(204, 204, 204);
         background: rgba(204, 204, 204, 0.7);
+        font-family: 'Ubuntu', sans-serif;
 
         .author_img {
-          width: 30px;
-          height: 30px;
+          width: 50px;
+          height: 50px;
+          padding: 5px;
           overflow: hidden;
           border-radius: 50px;
           margin-right: 5px;
@@ -109,15 +111,17 @@
       }
 
       .title {
-        padding-left: 10px;
+        padding-left: 45px;
         display: block;
+        font-size: 16px;
         position: absolute;
-        bottom: 5px;
+        bottom: 10px;
         left: 0;
         width: 100%;
         background: white;
         background: rgb(204, 204, 204);
         background: rgba(204, 204, 204, 0.7);
+        font-family: 'Source Sans Pro', sans-serif;
       }
       .author_id:hover {
         background: rgb(204, 204, 204);
