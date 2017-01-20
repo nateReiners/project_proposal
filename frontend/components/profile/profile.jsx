@@ -39,8 +39,8 @@ class Profile extends React.Component {
     const defaultProfileImg = "https://res.cloudinary.com/durooeqnc/image/upload/v1484895748/WmvM0_bpj2mj.png";
 
     let coverImgUrl;
-      if (this.props.currentUser.cover_img_url) {
-        coverImgUrl = this.props.currentUser.cover_img_url;
+      if (this.props.user.cover_img_url) {
+        coverImgUrl = this.props.user.cover_img_url;
       } else {
         coverImgUrl = defaultCoverImg;
       }

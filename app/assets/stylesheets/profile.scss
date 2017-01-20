@@ -45,10 +45,14 @@
       align-items: center;
 
       .profile-img {
+        flex-shrink: 0;
+        max-height: 25vw;
         min-height: 20vw;
+        max-width: 25vw;
         min-width: 20vw;
       }
     }
+
     .buttons-div {
       display: flex;
       justify-content: center;

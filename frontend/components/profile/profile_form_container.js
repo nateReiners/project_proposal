@@ -2,9 +2,9 @@ import { connect } from 'react-redux';
 import { requestSingleUser, updateUser } from '../../actions/users_actions';
 import ProfileForm from './profile_form';
 
-const mapStateToProps = ({ session }) => ({
+const mapStateToProps = ({ session, user }) => ({
   currentUser: session.currentUser,
-  profileImgUrl: session.currentUser.profile_img_url
+  user: user
 });
 
 const mapDispatchToProps = (dispatch) => ({

@@ -113,7 +113,7 @@ Photo.create!(author_id: u2.id, img_url: "https://source.unsplash.com/hjQEODOPP3
 Photo.create!(author_id: u8.id, img_url: "https://source.unsplash.com/Rshwi48zDQY", title: "Dive")
 Photo.create!(author_id: u3.id, img_url: "https://source.unsplash.com/EDqP5r_QwrE", title: "Arcadian")
 
-Photo.create!(author_id: u6.id, img_url: "https://source.unsplash.com/FgZlbzZ0R8", title: "Incredible")
+Photo.create!(author_id: u6.id, img_url: "http://www.std.nu/sites/default/files/styles/bootstrap3_col12/public/portfolio/unsplash-incredible-view.jpg?itok=Qa97apn9", title: "Tree")
 Photo.create!(author_id: u1.id, img_url: "https://source.unsplash.com/l9V-_4Wgm-Y", title: "Treeland")
 Photo.create!(author_id: u11.id, img_url: "https://source.unsplash.com/b1v6dw7W0wc", title: "Blossom")
 Photo.create!(author_id: u4.id, img_url: "https://source.unsplash.com/VW8MUbHyxCU", title: "Beautiful View")

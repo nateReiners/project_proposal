@@ -4,7 +4,7 @@ import {hashHistory} from 'react-router';
 
 class ProfileForm extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       username: this.props.currentUser.username,
@@ -12,8 +12,8 @@ class ProfileForm extends React.Component {
       last_name: this.props.currentUser.last_name,
       about: this.props.currentUser.about,
       email: this.props.currentUser.email,
-      profile_img_url: this.props.currentUser.profile_img_url,
-      cover_img_url: this.props.currentUser.cover_img_url,
+      profile_img_url: this.props.profileImgUrl,
+      cover_img_url: this.props.profileImgUrl,
       id: this.props.currentUser.id
     };
 
@@ -27,12 +27,7 @@ class ProfileForm extends React.Component {
   }
 
   componentWillReceiveProps(newState) {
-    debugger
-    if (newState.currentUser === this.props.currentUser) {
-
-    } else {
-      this.setState(newState.session.currentUser);
-    }
+      this.setState(newState.currentUser);
   }
 
   coverUploadWidget() {
@@ -41,15 +36,15 @@ class ProfileForm extends React.Component {
                    upload_preset: 'irbes1bu' },
                    (error, result) => {
       this.setState({cover_img_url: result[0].secure_url});
-     });
+    });
  }
 
  profileUploadWidget() {
   cloudinary.openUploadWidget(
     { cloud_name: 'durooeqnc', upload_preset: 'profile'},
     (error, result) => {
-    this.setState({profile_img_url: result[0].secure_url});
-   });
+    this.updateUrl("profile_img_url", result[0].secure_url);
+  });
  }
 
 
@@ -63,6 +58,10 @@ class ProfileForm extends React.Component {
       hashHistory.push(`/users/${this.props.currentUser.id}`);
   }
 
+  updateUrl(field, url) {
+    this.setState({[field]: url});
+  }
+
   update(field) {
     return (e) => {
       this.setState({[field]: e.target.value});
@@ -74,15 +73,15 @@ class ProfileForm extends React.Component {
     const defaultProfileImg = "https://res.cloudinary.com/durooeqnc/image/upload/v1484895748/WmvM0_bpj2mj.png";
 
     let coverImgUrl;
-      if (this.props.currentUser.cover_img_url) {
-        coverImgUrl = this.props.currentUser.cover_img_url;
+      if (this.state.cover_img_url) {
+        coverImgUrl = this.state.cover_img_url;
       } else {
         coverImgUrl = defaultCoverImg;
       }
 
     let profileImgUrl;
-    if (this.props.currentUser.profile_img_url) {
-      profileImgUrl = this.props.currentUser.profile_img_url;
+    if (this.state.profile_img_url) {
+      profileImgUrl = this.state.profile_img_url;
     } else {
       profileImgUrl = defaultProfileImg;
     }

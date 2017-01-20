@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {Link, hashHistory} from 'react-router';
 
 class UploadButton extends React.Component {
   constructor(props) {
@@ -11,7 +11,8 @@ class UploadButton extends React.Component {
 
   postPhoto(photo) {
     let img = {img_url: photo.url, author_id: this.props.currentUserID};
-    this.props.createPhoto(img);
+    this.props.createPhoto(img)
+    .then(hashHistory.push(`/users/${img.author_id}`));
   }
 
   upload(e) {
