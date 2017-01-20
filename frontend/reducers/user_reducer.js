@@ -31,7 +31,6 @@ const UserReducer = (state = {}, action) => {
       newState.followed = true;
       return newState;
     case REMOVE_FOLLOW:
-    console.log("hit removefollow reducer")
       newState.followed = false;
       return newState;
     default:

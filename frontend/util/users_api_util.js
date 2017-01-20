@@ -1,5 +1,4 @@
 export const fetchSingleUser = id => {
-  console.log("hit fetchSingleUser ajax call");
   return $.ajax({
     method: 'GET',
     url: `api/users/${id}`
@@ -15,7 +14,6 @@ export const createUser = user => {
 }
 
 export const updateUser = user => {
-  debugger
   return $.ajax({
     method: "PATCH",
     url: `api/users/${user.id}`,

@@ -19,7 +19,6 @@ export const requestSingleFollow = (id) => (dispatch) => {
 };
 
 export const createFollow = follow => dispatch => {
-	console.log("createFollow action hit!");
 	return APIUtil.createFollow(follow).then(newFollow => {
 		dispatch(receiveNewFollow(newFollow));
 		return newFollow;
@@ -27,7 +26,6 @@ export const createFollow = follow => dispatch => {
 };
 
 export const destroyFollow = id => dispatch => {
-	console.log("destroyFollow action hit!");
 	return APIUtil.deleteFollow(id).then(deletedFollow => {
 		dispatch(removeFollow(deletedFollow));
 	})

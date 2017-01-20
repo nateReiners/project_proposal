@@ -23,9 +23,6 @@ class Profile extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    console.log("UNMOUNTED PROFILE")
-  }
 
   render() {
 

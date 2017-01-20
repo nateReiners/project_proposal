@@ -8,7 +8,6 @@ import App from './app';
 import HomeContainer from './home/home_container';
 import ProfileContainer from './profile/profile_container';
 import PhotoDetailContainer from './photos/photo_detail_container';
-import SimpleSliderContainer from './photos/slick_container';
 import ProfileFormContainer from './profile/profile_form_container'
 
 const Root = ({ store }) => {
@@ -39,7 +38,6 @@ const Root = ({ store }) => {
           <Route path="users/:id/edit" component={ProfileFormContainer} onEnter={_ensureLoggedIn} />
           <Route path="profile" component={ProfileContainer} onEnter={_ensureLoggedIn}/>
           <Route path="photos/:id" component={PhotoDetailContainer} onEnter={_ensureLoggedIn} />
-          <Route path="slick" component={ SimpleSliderContainer } />
       </Route>
       </Router>
     </Provider>
