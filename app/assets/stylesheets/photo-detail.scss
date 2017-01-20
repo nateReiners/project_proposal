@@ -38,7 +38,7 @@
       list-style: none;
       width: 94vw;
       max-width: 1070px;
-      margin-top: 2vw;
+      margin-top: 3vw;
       margin-bottom: 2.5vw;
       display: flex;
       justify-content: space-between;
@@ -62,7 +62,6 @@
           }
 
           a:hover {
-            font-weight: bold;
             background: rgb(256, 256, 256);
             background: rgba(256, 256, 256, 0.2);
           }

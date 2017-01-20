@@ -58,7 +58,7 @@
       align-items: center;
       flex-direction: column;
       position: absolute;
-      bottom: 1vw;
+      bottom: 1.5vw;
       left: 3vw;
       width: 10vw;
 
@@ -111,7 +111,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     font-size: 24px;
 
     -o-transition: 1s;
@@ -131,11 +131,15 @@
 
         h1 {
           margin-bottom: 20px;
+          font-size: 24px;
+          text-decoration: underline;
         }
 
         .about-div {
           padding: 20px 80px 40px 80px;
-          font-size: 12px;
+          max-width: 600px;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 16px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -176,15 +180,14 @@
         max-height: 120%;
         min-width: 100%;
         max-width: 120%;
-        filter: brightness(.85);
+        filter: brightness(.8);
       }
       img:hover {
         filter: brightness(1);
       }
     }
     .photos-index-item:hover {
-      transform: scale(1.02);
-      box-shadow: 2px 2px 3px black;
+      box-shadow: 1px 1px 3px black;
     }
   }
 }

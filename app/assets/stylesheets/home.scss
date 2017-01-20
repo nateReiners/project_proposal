@@ -5,7 +5,8 @@
 
 .home-div {
   position: absolute;
-  margin-top: 20px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -18,7 +19,7 @@
 .home-feed-div {
   width: 100vw;
   display: flex;
-  padding-top: 60px;
+  padding-top: 40px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -71,7 +72,7 @@
         min-height: 100%;
         min-width: 100%;
         max-height: 120%;
-        max-width: 120%;
+        max-width: 140%;
       }
 
       img:hover {
@@ -84,6 +85,7 @@
       z-index: 1;
       transform: scale(1.08);
       box-shadow: 5px 5px 10px black;
+      border: black;
 
       .author_id {
         display: flex;
@@ -100,18 +102,21 @@
         font-family: 'Ubuntu', sans-serif;
 
         .author_img {
-          width: 50px;
-          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
           padding: 5px;
           overflow: hidden;
-          border-radius: 50px;
+          border-radius: 5px;
           margin-right: 5px;
           z-index: 1
         }
       }
 
       .title {
-        padding-left: 45px;
+        padding-left: 56px;
         display: block;
         font-size: 16px;
         position: absolute;
