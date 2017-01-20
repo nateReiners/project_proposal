@@ -5,7 +5,7 @@
 
 .home-div {
   position: absolute;
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -18,9 +18,12 @@
 .home-feed-div {
   width: 100vw;
   display: flex;
+  padding-top: 60px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 22px;
 
   .photos-index {
     display: flex;
@@ -28,7 +31,7 @@
     width: 100%;
 
       ul {
-        padding: 50px;
+        padding: 15px;
         list-style-type: none;
         display: flex;
         justify-content: center;
@@ -43,7 +46,6 @@
       }
 
     .photos-index-item {
-
       height: 240px;
       width: 320px;
       margin: 10px;
@@ -71,6 +73,7 @@
         max-height: 120%;
         max-width: 120%;
       }
+
       img:hover {
       }
     }
@@ -79,7 +82,7 @@
     .photos-index-item:hover {
       font-family: sans-serif;
       z-index: 1;
-      transform: scale(1.1);
+      transform: scale(1.08);
       box-shadow: 5px 5px 10px black;
 
       .author_id {
@@ -88,9 +91,9 @@
         align-items: center;
         flex-direction: row;
         width: 100%;
-        padding: 10px;
         position: absolute;
-        bottom: 50px;
+        padding-left: 10px;
+        bottom: 36px;
         left: 0;
         background: rgb(204, 204, 204);
         background: rgba(204, 204, 204, 0.7);
@@ -105,11 +108,10 @@
       }
 
       .title {
-        padding: 5px;
         padding-left: 10px;
         display: block;
         position: absolute;
-        bottom: 15px;
+        bottom: 5px;
         left: 0;
         width: 100%;
         background: white;

@@ -3,7 +3,8 @@ import { requestSingleUser, updateUser } from '../../actions/users_actions';
 import ProfileForm from './profile_form';
 
 const mapStateToProps = ({ session }) => ({
-  currentUser: session.currentUser
+  currentUser: session.currentUser,
+  profileImgUrl: session.currentUser.profile_img_url
 });
 
 const mapDispatchToProps = (dispatch) => ({

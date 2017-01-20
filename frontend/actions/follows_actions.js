@@ -29,7 +29,7 @@ export const createFollow = follow => dispatch => {
 export const destroyFollow = id => dispatch => {
 	console.log("destroyFollow action hit!");
 	return APIUtil.deleteFollow(id).then(deletedFollow => {
-		dispatch(receiveSingleFollow(deletedFollow));
+		dispatch(removeFollow(deletedFollow));
 	})
 };
 

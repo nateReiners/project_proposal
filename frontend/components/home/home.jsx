@@ -18,9 +18,8 @@ class Home extends React.Component {
         <LoggedInNav />
       <div className="home-main">
         <div className="home-div">
-          <h1>This is the logged-in homepage</h1>
           <div className="home-feed-div">
-            <h1>This is the home feed div!</h1>
+            <h1>Photos from Photographers You Follow</h1>
             <PhotosIndexContainer photos={ values(this.props.photos) || [] } />
           </div>
         </div>

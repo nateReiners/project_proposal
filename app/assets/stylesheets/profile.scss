@@ -3,69 +3,169 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background: #f4f1ed;
+
 
   .cover-photo-div {
+    margin-top: 50px;
     width: 100%;
-    height: 33vh;
+    height: 28vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-bottom: 1px solid black;
-    img {
+    position: relative;
+    overflow: hidden;
+
+    .name {
+      font-size: 28px;
+      font-family: 'Didact Gothic', sans-serif;
+      font-weight: bold;
+      position: absolute;
+      top: 210px;
+      color: white;
+    }
+
+    .cover-img {
       flex-shrink: 0;
       min-height: 100%;
       min-width: 100%;
-      max-height: 120%;
-      max-width: 160%;
+      max-width: 120%;
+    }
+
+    .profile-photo-div {
+      position: absolute;
+      top: 25px;
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .profile-img {
+        flex-shrink: 0;
+        max-width: 100%;
+        min-height: 100%;
+      }
+    }
+    .buttons-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: 100px;
+
+      .follow-button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        color: white;
+        font-family: sans-serif;
+        background: green;
+        border: black;
+        font-size: 14px;
+        padding: 5px 10px 5px 10px;
+      }
+
+      .follow-button:hover {
+        font-weight: bold;
+        background: darkgreen;
+        box-shadow: 1px 1px 1px black;
+      }
+
+      a {
+        margin: 0px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 5px 10px 5px 10px;
+        margin: 10px;
+        border-radius: 5px;
+        color: white;
+        font-family: sans-serif;
+        background: green;
+        border: black;
+      }
+      a:hover {
+        background: darkgreen;
+        font-weight: bold;
+        box-shadow: 1px 1px 1px black;
+      }
     }
   }
 
-  .profile-info-div {
-    height: 200px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: lightblue;
-    position: relative;
-
-      .profile-photo-div {
-        height: 170px;
-        width: 170px;
-        overflow: hidden;
-        border-radius: 50%;
-        position: absolute;
-        top: -85px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
+  .cover-photo-div:hover {
+    .about-div {
+      max-height: 500px;
+      transition: max-height 1s ease-in;
+    }
   }
+
 
 
   .profile-photos {
+    width: 100vw;
     border: 1px solid black;
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    justify-content: baseline;
-    flex-direction: row;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 24px;
+
+    -o-transition: 1s;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    /* ...and now for the proper property */
+    transition: 1s;
+
+
+      .profile-info-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        h1 {
+          margin-bottom: 20px;
+        }
+
+        .about-div {
+          padding: 20px 80px 40px 80px;
+          font-size: 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
 
     ul {
+      margin-bottom: 100px;
       list-style: none;
       display: flex;
+      justify-content: center;
+      flex-direction: row;
       flex-wrap: wrap;
+      padding: 10px 30px 10px 30px;
     }
 
     .photos-index-item {
-      height: 120px;
-      width: 150px;
+      height: 200px;
+      width: 300px;
       margin: 5px;
       border: 1px solid lightgray;
       box-sizing: border-box;
@@ -74,6 +174,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      transition: transform .2s ease-in-out;
 
       .author_id, .title {
         display: none;
@@ -81,7 +182,9 @@
       img {
         flex-shrink: 0;
         min-height: 100%;
-        max-width: 100%;
+        max-height: 120%;
+        min-width: 100%;
+        max-width: 120%;
         filter: brightness(.85);
       }
       img:hover {
@@ -89,7 +192,8 @@
       }
     }
     .photos-index-item:hover {
-      box-shadow: 1px 1px 1px black;
+      transform: scale(1.02);
+      box-shadow: 2px 2px 3px black;
     }
   }
 }

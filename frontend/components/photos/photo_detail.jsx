@@ -15,18 +15,14 @@ class PhotoDetail extends React.Component {
       <div className="photo-detail-main">
         <LoggedInNav />
         <section className="photo-detail">
+          <h1 className="title">"{photo.title}" by {photo.author_name}</h1>
           <figure>
             <img src={photo.img_url} alt={photo.title} />
             <div className="side-div">
-              <ul>
-                <li className="title">{photo.title}</li>
-
-                <Link to={`/users/${photo.author_id}`} className="photographer_link">
-                <li>
-                    <h3>By {photo.author_name}</h3>
-                </li>
+              <Link to={`/users/${photo.author_id}`} className="photographer_link">
+                <h3>Visit {photo.author_name}'s Profile</h3>
               </Link>
-              </ul>
+              <Link to="/home" className="back-link">Back to Home</Link>
             </div>
           </figure>
         </section>
