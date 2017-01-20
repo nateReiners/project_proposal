@@ -7,17 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-u1 = User.create!(username: "David Larson", first_name: "David", last_name: "Larson", password: "touchdown", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_thumb,g_face:center,h_200/v1484898239/13_7xgybb7c-jd-mason_mbp62j.jpg")
-u2 = User.create!(username: "Bill Dobson", first_name: "Bill", last_name: "Dobson", password: "touchdown", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_fill,g_face:center,h_200,w_180/v1484898143/cgqg8bx2kbw-alfonso-castro_uxetcv.jpg")
+u1 = User.create!(username: "David Larson", first_name: "David", last_name: "Larson", password: "touchdown", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_thumb,g_face:center,h_200/v1484898239/13_7xgybb7c-jd-mason_mbp62j.jpg")
+u2 = User.create!(username: "Bill Dobson", first_name: "Bill", last_name: "Dobson", password: "touchdown", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_fill,g_face:center,h_200,w_180/v1484898143/cgqg8bx2kbw-alfonso-castro_uxetcv.jpg")
 u3 = User.create!(username: "Rowen Morse", first_name: "Rowen", last_name: "Morse", password: "demopassword", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_fill,h_200/v1484900402/7xldgzjfx3s-i-m-priscilla_bn3c7f.jpg")
 u4 = User.create!(username: "Steven Donald", first_name: "Steven", last_name: "Donald", password: "touchdown", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_lfill,g_face:center,w_180/v1484899073/hrzuzox1e6w-brooke-cagle_w4mkyi.jpg")
-u5 = User.create!(username: "Donny Raymond", first_name: "Donny", last_name: "Raymond", password: "touchdown", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_fill,g_face:center,h_200,x_0/v1484898227/su0rzsq7rqs-ashton-bingham_vccle3.jpg")
-u6 = User.create!(username: "Shannon Cole", first_name: "Shannon", last_name: "Cole", password: "touchdown", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/v1484897883/endregvcvam0o4a4vd2h.jpg")
+u5 = User.create!(username: "Donny Raymond", first_name: "Donny", last_name: "Raymond", password: "touchdown", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_fill,g_face:center,h_200,x_0/v1484898227/su0rzsq7rqs-ashton-bingham_vccle3.jpg")
+u6 = User.create!(username: "Shannon Cole", first_name: "Shannon", last_name: "Cole", password: "touchdown", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/v1484897883/endregvcvam0o4a4vd2h.jpg")
 u7 = User.create!(username: "Ron Stevenson", first_name: "Ron", last_name: "Stevenson", password: "touchdown", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_fill,g_face:center,w_180/v1484900276/fqeutmkyhwu-agberto-guimaraes_asqice.jpg")
-u8 = User.create!(username: "Victor Aston", password: "touchdown", first_name: "Victor", last_name: "Aston", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_thumb,h_200/v1484898250/sibvworyqs0-ayo-ogunseinde_tk1y7f.jpg")
-u9 = User.create!(username: "Quin Rollins", password: "touchdown", first_name: "Quin", last_name: "Rollins", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_thumb,h_180,q_100,r_30/a_0/v1484896604/pas4im6ogwi-joe-gardner_xf5ls3.jpg")
-u10 = User.create!(username: "Vicky Winston", password: "touchdown", first_name: "Vicky", last_name: "Winston", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_thumb,g_face:center,h_200/v1484898264/k36naecxvwu-henri-meilhac_dewbve.jpg")
-u11 = User.create!(username: "Sarah Wilson", password: "touchdown", first_name: "Sarah", last_name: "Lee", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_scale,h_200/v1484900538/bdc_yrg4n_g-jeremy-bishop_qfa4ad.jpg")
+u8 = User.create!(username: "Victor Aston", password: "touchdown", first_name: "Victor", last_name: "Aston", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_thumb,h_200/v1484898250/sibvworyqs0-ayo-ogunseinde_tk1y7f.jpg")
+u9 = User.create!(username: "Quin Rollins", password: "touchdown", first_name: "Quin", last_name: "Rollins", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_thumb,h_180,q_100,r_30/a_0/v1484896604/pas4im6ogwi-joe-gardner_xf5ls3.jpg")
+u10 = User.create!(username: "Vicky Winston", password: "touchdown", first_name: "Vicky", last_name: "Winston", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_thumb,g_face:center,h_200/v1484898264/k36naecxvwu-henri-meilhac_dewbve.jpg")
+u11 = User.create!(username: "Sarah Wilson", password: "touchdown", first_name: "Sarah", last_name: "Lee", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_scale,h_200/v1484900538/bdc_yrg4n_g-jeremy-bishop_qfa4ad.jpg")
 
 
 Photo.create!(author_id: u5.id, img_url: "https://source.unsplash.com/R4T9TI8EsJI", title: "Amazement")

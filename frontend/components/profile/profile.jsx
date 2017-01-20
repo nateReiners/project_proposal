@@ -25,8 +25,8 @@ class Profile extends React.Component {
 
   render() {
 
-    const defaultCoverImg = "http://res.cloudinary.com/durooeqnc/image/upload/v1484904698/xvljib9zmhm-david-chalifoux_dm8s69.jpg";
-    const defaultProfileImg = "http://res.cloudinary.com/durooeqnc/image/upload/v1484895748/WmvM0_bpj2mj.png";
+    const defaultCoverImg = "https://res.cloudinary.com/durooeqnc/image/upload/v1484904698/xvljib9zmhm-david-chalifoux_dm8s69.jpg";
+    const defaultProfileImg = "https://res.cloudinary.com/durooeqnc/image/upload/v1484895748/WmvM0_bpj2mj.png";
 
     let coverImgUrl;
       if (this.props.currentUser.cover_img_url) {
