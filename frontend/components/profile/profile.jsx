@@ -24,10 +24,29 @@ class Profile extends React.Component {
   }
 
   render() {
+
+    const defaultCoverImg = "http://res.cloudinary.com/durooeqnc/image/upload/v1484895917/HkTMcmlMOUQ_h8aeth.jpg";
+    const defaultProfileImg = "http://res.cloudinary.com/durooeqnc/image/upload/v1484895748/WmvM0_bpj2mj.png";
+
+    let coverImgUrl;
+      if (this.props.currentUser.cover_img_url) {
+        coverImgUrl = this.props.currentUser.cover_img_url;
+      } else {
+        coverImgUrl = defaultCoverImg;
+      }
+
+    let profileImgUrl;
+    if (this.props.currentUser.profile_img_url) {
+      profileImgUrl = this.props.currentUser.profile_img_url;
+    } else {
+      profileImgUrl = defaultProfileImg;
+    }
+
+
     let profileFormButton;
     let followButton;
     if (this.props.params.id == this.props.currentUser.id) {
-      const url = `users/${currentUser.id}/edit`
+      const url = `users/${this.props.currentUser.id}/edit`
       profileFormButton = <Link to={url} className="edit-profile-button">Edit Profile</Link>;
       followButton = <div></div>;
     } else {
@@ -44,9 +63,9 @@ class Profile extends React.Component {
           <LoggedInNav />
         <div className="profile-div">
           <div className="cover-photo-div">
-            <img className="cover-img" src={this.props.user.cover_img_url}></img>
+            <img className="cover-img" src={coverImgUrl}></img>
             <div className="profile-photo-div">
-              <img className="profile-img" src={this.props.user.profile_img_url}></img>
+              <img className="profile-img" src={profileImgUrl}></img>
             </div>
             <h1 className="name">{name}</h1>
             <div className="buttons-div">
