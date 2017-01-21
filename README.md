@@ -1,7 +1,7 @@
 # TogLink
 
 
-[Live Site][www.toglink.com]
+[Live Site](www.toglink.com)
 
 TogLink is a full-stack web app inspired by 500px. The backend uses Ruby on Rails and a Postgres database, and the frontend was built using React.js with a Redux framework.
 
