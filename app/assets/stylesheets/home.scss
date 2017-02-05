@@ -63,6 +63,8 @@
       }
 
       .img-name-title {
+        opacity: 0.2;
+        visibility: hidden;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -71,14 +73,14 @@
         height: 40px;
         position: absolute;
         padding: 10px;
-        bottom: 0px;
+        bottom: -60px;
         background: linear-gradient(
                         transparent,
                         black);
         font-family: 'Ubuntu', sans-serif;
         color: white;
         font-size: 14px;
-        transition: bottom .12s linear;
+        transition: bottom .1s, opacity .28s linear;
 
       .img-and-name, {
         display: flex;
@@ -88,16 +90,16 @@
         margin-left: 15px;
 
         .img {
-          height: 40px;
-          width: 40px;
+          height: 36px;
+          width: 36px;
+          margin-right: 10px;
           border-radius: 100px;
           overflow: hidden;
 
           }
 
         .name {
-          font-size: 16;
-          padding: 10px;
+          padding: 2px;
         }
       }
       .title {
@@ -106,6 +108,32 @@
         margin-right: 15px;
       }
     }
+    }
+
+    .photos-index-item:hover {
+        position: relative;
+      .img-name-title {
+        visibility: visible;
+        opacity: 1.0;
+        position: absolute;
+        bottom: 0px;
+        padding: 10px;
+        color: white;
+        font-size: 14px;
+        width: 100%;
+        background: linear-gradient(transparent, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4), black);
+        .title {
+          font-style: italic;
+        }
+
+        .img > img:hover {
+          filter: brightness(.7);
+        }
+        .name:hover {
+          background: rgba(256, 256, 256, .3);
+          border-radius: 3px;
+        }
+      }
     }
   }
 
