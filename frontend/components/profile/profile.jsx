@@ -3,7 +3,7 @@ import LoggedInNav from '../main_nav/logged-in_nav';
 import PhotosIndexContainer from '../photos/photos_index_container';
 import FollowButtonContainer from '../follow/follow_button_container';
 import ProfileFormContainer from './profile_form_container';
-import {Link} from 'react-router'
+import {Link, hashHistory} from 'react-router'
 class Profile extends React.Component {
   constructor(props) {
     super(props);
@@ -21,6 +21,10 @@ class Profile extends React.Component {
     } else {
       this.props.requestSingleUser(nextUserID);
     }
+  }
+
+  openForm() {
+    hashHistory.push("users/:id/edit");
   }
 
 
@@ -54,7 +58,7 @@ class Profile extends React.Component {
     let followButton;
     if (this.props.params.id == this.props.currentUser.id) {
       const url = `users/${this.props.currentUser.id}/edit`
-      profileFormButton = <Link to={url} className="edit-profile-button">Edit Profile</Link>;
+      profileFormButton = <button onClick={this.openForm} className="edit-profile-button">Edit Profile</button>;
       followButton = <div></div>;
     } else {
       profileFormButton = <div></div>;
@@ -90,7 +94,7 @@ class Profile extends React.Component {
               {this.props.user.about}
             </div>
           </div>
-            <h1>Photos</h1>
+            <h1>{this.props.user.first_name}'s Photos</h1>
             <PhotosIndexContainer photos={this.props.user.photos || []} />
           </div>
         </div>

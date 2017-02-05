@@ -61,44 +61,21 @@
       position: absolute;
       bottom: 1.5vw;
       left: 3vw;
-      width: 10vw;
+      width: 120px;
 
-      .follow-button {
+      button {
         width: 100%;
-        padding: 10px;
-        border-radius: 5px;
         color: white;
-        font-family: sans-serif;
-        background: green;
+        font-weight: bold;
+        background: #00b806;
+        padding: 8px 20px 8px 20px;
+        border-radius: 3px;
         border: black;
-        font-size: 1.8vw;
-        padding: 5px 10px 5px 10px;
+        filter: brightness(.9);
       }
 
-      .follow-button:hover {
-        font-weight: bold;
-        background: darkgreen;
-        box-shadow: 1px 1px 1px black;
-      }
-
-      a {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.8vw;
-        padding: 5px 10px 5px 10px;
-        margin: 1vw;
-        border-radius: 5px;
-        color: white;
-        font-family: sans-serif;
-        background: green;
-        border: black;
-      }
-      a:hover {
-        background: darkgreen;
-        font-weight: bold;
-        box-shadow: 1px 1px 1px black;
+      button:hover {
+        filter: brightness(1);
       }
     }
   }
@@ -163,17 +140,22 @@
       height: 200px;
       width: 300px;
       margin: 5px;
-      border: 1px solid lightgray;
       box-sizing: border-box;
       display: flex;
       overflow: hidden;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: transform .2s ease-in-out;
+      position: relative;
 
-      .author_id, .title {
-        display: none;
+      .title {
+        padding: 10px;
+        color: white;
+        font-style: italic;
+        font-size: 16px;
+        width: 100%;
+        background: linear-gradient(transparent, black);
+        position: absolute;
+        bottom: -38px;
+        transition: bottom .12s;
       }
       img {
         flex-shrink: 0;
@@ -181,14 +163,20 @@
         max-height: 120%;
         min-width: 100%;
         max-width: 120%;
-        filter: brightness(.8);
-      }
-      img:hover {
-        filter: brightness(1);
       }
     }
     .photos-index-item:hover {
-      box-shadow: 1px 1px 3px black;
+        position: relative;
+      .title {
+        font-style: italic;
+        position: absolute;
+        bottom: 0px;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        width: 100%;
+        background: linear-gradient(transparent, black);
+      }
     }
   }
 }

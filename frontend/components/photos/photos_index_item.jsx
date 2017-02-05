@@ -9,13 +9,19 @@ const PhotosIndexItem = ({ photo, router }) => {
       <Link to={`/photos/${photo.id}`}>
           <img src={photo.img_url} alt={photo.title} />
       </Link>
-      <Link to={`/users/${photo.author_id}`} className="author_id">
-        <div className="author_img">
-          <img src={photo.author_url}></img>
+      <div className="img-name-title">
+        <Link to={`/users/${photo.author_id}`} className="img-and-name">
+          <div className="img">
+            <img src={photo.author_url}></img>
+          </div>
+          <div className="name">
+            <h3>{photo.author_name}</h3>
+          </div>
+        </Link>
+        <div className="title">
+          <p>{photo.title}</p>
         </div>
-        <h3 className="author_name">{photo.author_name}</h3>
-      </Link>
-      <h3 className="title">{photo.title}</h3>
+      </div>
     </li>
   );
 }
