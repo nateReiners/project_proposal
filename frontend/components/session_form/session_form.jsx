@@ -8,8 +8,9 @@ import LoginFormNav from '../main_nav/login-form-nav';
 class SessionForm extends React.Component {
   constructor(props) {
       super(props);
-      this.state = { username: "", password: "" };
+      this.state = { first_name: "", last_name: "", email: "", username: "", password: "" };
       this.handleSubmit = this.handleSubmit.bind(this);
+      this.formContent = this.formContent.bind(this);
   }
 
   componentDidUpdate() {
@@ -24,7 +25,7 @@ class SessionForm extends React.Component {
 
   componentWillReceiveProps(newState) {
     if (newState.formType != this.props.formType) {
-      this.setState({ username: "", password: "" });
+      this.setState({ first_name: "", last_name: "", email: "", username: "", password: "" });
     }
   }
 
@@ -73,6 +74,62 @@ class SessionForm extends React.Component {
     );
   }
 
+  formContent() {
+    if (this.props.formType === "login") {
+      return (
+        <div>
+          <label> Username
+            <input type="text"
+                  value={this.state.username}
+                  onChange={this.update("username")}
+                  className="login-input" />
+          </label>
+          <label> Password
+            <input type="password"
+                  value={this.state.password}
+                  onChange={this.update("password")}
+                  className="login-input" />
+          </label>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <label> First Name
+            <input type="text"
+                  value={this.state.first_name}
+                  onChange={this.update("first_name")}
+                  className="login-input" />
+          </label>
+          <label> Last Name
+            <input type="text"
+                  value={this.state.last_name}
+                  onChange={this.update("last_name")}
+                  className="login-input" />
+          </label>
+          <label> Email
+            <input type="text"
+                  value={this.state.email}
+                  onChange={this.update("email")}
+                  className="login-input" />
+          </label>
+          <label> Username
+            <input type="text"
+                  value={this.state.username}
+                  onChange={this.update("username")}
+                  className="login-input" />
+          </label>
+          <label> Password
+            <input type="password"
+                  value={this.state.password}
+                  onChange={this.update("password")}
+                  className="login-input" />
+          </label>
+        </div>
+      );
+    }
+  }
+
   render () {
     String.prototype.titleize = function() {
       return this.charAt(0).toUpperCase() + this.slice(1);
@@ -86,18 +143,7 @@ class SessionForm extends React.Component {
               <div className="errors-div">
                 {this.renderErrors()}
               </div>
-              <label> Email or Username
-                <input type="text"
-                      value={this.state.username}
-                      onChange={this.update("username")}
-                      className="login-input" />
-              </label>
-              <label> Password
-                <input type="password"
-                      value={this.state.password}
-                      onChange={this.update("password")}
-                      className="login-input" />
-              </label>
+              {this.formContent()}
               <input className="submitButton" type="submit" value={this.props.formType.titleize()} />
               {this.swapFormMessage()}
             </div>
