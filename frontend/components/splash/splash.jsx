@@ -12,7 +12,7 @@ const Splash = () => {
   function changeclass() {
       document.body.id = `background-${i}`;
       i++;
-      if(i === 6) { i = 1; }
+      if(i === 7) { i = 1; }
   }
 
   return (
@@ -26,7 +26,6 @@ const Splash = () => {
         <DemoButtonContainer />
       </div>
       <button className="change-background-btn" onClick={() => changeclass()}>
-        Change Background
       </button>
     </div>
   );

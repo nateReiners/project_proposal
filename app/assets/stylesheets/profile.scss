@@ -92,39 +92,32 @@
     font-family: 'Didact Gothic', sans-serif;
     font-size: 24px;
 
-    -o-transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-    -webkit-transition: 1s;
-    /* ...and now for the proper property */
-    transition: 1s;
 
+    .profile-info-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
 
-      .profile-info-div {
-        width: 100%;
+      h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-decoration: underline;
+      }
+
+      .about-div {
+        padding: 20px 80px 40px 80px;
+        max-width: 600px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-
-        h1 {
-          margin-bottom: 20px;
-          font-size: 24px;
-          text-decoration: underline;
-        }
-
-        .about-div {
-          padding: 20px 80px 40px 80px;
-          max-width: 600px;
-          font-family: 'Source Sans Pro', sans-serif;
-          font-size: 16px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        }
+        text-align: center;
       }
+    }
 
     ul {
       margin-bottom: 100px;
