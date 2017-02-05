@@ -15,7 +15,7 @@ class DemoButton extends React.Component {
 
   render() {
     return (
-      <button className="submitButton" onClick={this.guestLogin}>Demo as Guest</button>
+      <button className="submitButton" onClick={this.guestLogin}>Demo as guest</button>
     );
   }
 }
