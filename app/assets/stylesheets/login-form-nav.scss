@@ -12,18 +12,18 @@
     display: flex;
 
     a {
-      padding: 13.5px;
+      padding: 14.5px;
       text-decoration: none;
       font-family: sans-serif;
       color: white;
-      background: #00b806;
+      font-size: 14px;
+      background: rgba(0, 184, 6, .85);
       border-right: 1px solid white;
-      filter: brightness(.85);
     }
 
 
     a:hover {
-      filter: brightness(1);
+      background: rgba(0, 184, 6, 1);
       color: white;
     }
   }
@@ -41,8 +41,9 @@
   .login {
     text-align: center;
     a {
-      padding: 14px;
+      padding: 15px;
       text-decoration: none;
+      font-size: 14px;
       font-family: sans-serif;
       color: black;
       border-right: 1px solid white;

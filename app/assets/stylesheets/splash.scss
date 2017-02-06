@@ -1,10 +1,8 @@
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
 
 @keyframes grow {
-  from { transform: scale(.95); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
+  from { transform: scale(.98); }
   to { transform: scale(1); }
 }
 
@@ -15,7 +13,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
   }
 
   #background-2 {
@@ -33,7 +30,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
   }
   #background-4 {
     height: 100vh;
@@ -52,23 +48,44 @@
     background-size: cover;
   }
 
+  @media all and (min-width: 960px) {
+    h1 {
+        font-size: 36px;
+      }
+    h2 {
+      font-size: 24px;
+    }
+  }
 
+  @media all and (max-width: 959px) and (min-width: 600px) {
+  h1{
+      font-size: 4vw;
+    }
+    h2 {
+      font-size: 3vw;
+    }
+  }
+
+  @media all and (max-width: 599px) and (min-width: 50px) {
+  h1{
+      font-size: 6vw;
+    }
+    h2 {
+      font-size: 4vw;
+    }
+  }
 
 
 .splash-welcome-container {
 
 
-  -webkit-animation: grow 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: grow 2s; /* Firefox < 16 */
-      -ms-animation: grow 2s; /* Internet Explorer */
-       -o-animation: grow 2s; /* Opera < 12.1 */
-          animation: grow 2s;
-          animation-delay: 1.0;
+
 }
 
 .splash-welcome {
-  padding-top: 40px;
-  z-index: 1;
+  opacity: 0;
+  z-index: -2;
+  padding-top: 5vh;
   color: white;
   font-family: sans-serif;
   display: flex;
@@ -76,36 +93,39 @@
   align-items: center;
   flex-direction: column;
 
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-       -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
+  -webkit-animation: grow 2.6s; /* Safari, Chrome and Opera > 12.6.1 */
+     -moz-animation: grow 2.6s; /* Firefox < 16 */
+      -ms-animation: grow 2.6s; /* Internet Explorer */
+       -o-animation: grow 2.6s; /* Opera < 12.6.1 */
+          animation: grow 2.6s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: .6s;
+
 
   h1 {
-    font-size: 36px;
     padding: 30px;
     text-align: center;
   }
   h2 {
-    font-size: 24px;
     padding-bottom: 30px;
     text-align: center;
   }
   button {
-    z-index: 2;
+    z-index: 10;
     font-size: 20px;
     padding: 12px 20px 12px 20px;
-    background: #00a5ff;
+    background: #0082e5;
+  }
+  button:hover {
+    background: #0087ff;
   }
 }
 
 .change-background-btn {
   position: absolute;
-  background: transparent;
   border-style: none;
-  top: -5px;
-  left: -5px;
-  height: 110vh;
-  width: 110vw;
+  background: transparent;
+  top: calc(15vh + 250px);
+  height: calc(46vh - 90px);
+  width: 100vw;
 }

@@ -46,14 +46,14 @@
     width: 256px;
     color: white;
     font-weight: bold;
-    background: #00b806;
+    background: rgba(0, 184, 6, .85);
     padding: 10px 20px 10px 20px;
     border-radius: 3px;
     border: black;
     filter: brightness(.9);
   }
   .submitButton:hover {
-    filter: brightness(1);
+    background: rgba(0, 184, 6, 1);
   }
 
   .form-message {
