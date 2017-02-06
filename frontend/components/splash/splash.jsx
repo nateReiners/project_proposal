@@ -19,10 +19,12 @@ const Splash = () => {
     <div className="splash-div">
       <div id={changeclass()} className="background-imgs">
       <LoggedOutNav />
-      <div className="splash-welcome">
-        <h1>Where photographers connect</h1>
-        <h2>Share your work, and stay inspired.</h2>
-        <DemoButtonContainer />
+      <div className="splash-welcome-container">
+        <div className="splash-welcome">
+          <h1>Where photographers connect</h1>
+          <h2>Share your work, and stay inspired.</h2>
+          <DemoButtonContainer />
+        </div>
       </div>
       <button className="change-background-btn" onClick={() => changeclass()}>
       </button>

@@ -3,14 +3,19 @@
   to   { opacity: 1; }
 }
 
+@keyframes grow {
+  from { transform: scale(.95); }
+  to { transform: scale(1); }
+}
+
   #background-1 {
     height: 100vh;
-    background: image_url("mtns.jpg") no-repeat center center fixed;
+    background: image_url("splash-dark.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+
   }
 
   #background-2 {
@@ -40,7 +45,7 @@
   }
   #background-5 {
     height: 100vh;
-    background: image_url("sunset.jpg") no-repeat center center fixed;
+    background: image_url("road.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -50,6 +55,16 @@
 
 
 
+.splash-welcome-container {
+
+
+  -webkit-animation: grow 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: grow 2s; /* Firefox < 16 */
+      -ms-animation: grow 2s; /* Internet Explorer */
+       -o-animation: grow 2s; /* Opera < 12.1 */
+          animation: grow 2s;
+          animation-delay: 1.0;
+}
 
 .splash-welcome {
   padding-top: 40px;
@@ -61,12 +76,12 @@
   align-items: center;
   flex-direction: column;
 
-
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 2s; /* Firefox < 16 */
       -ms-animation: fadein 2s; /* Internet Explorer */
        -o-animation: fadein 2s; /* Opera < 12.1 */
           animation: fadein 2s;
+
   h1 {
     font-size: 36px;
     padding: 30px;
