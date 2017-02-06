@@ -18,7 +18,6 @@ const Splash = () => {
   return (
     <div className="splash-div">
       <div id={changeclass()} className="background-imgs">
-      </div>
       <LoggedOutNav />
       <div className="splash-welcome">
         <h1>Where photographers connect</h1>
@@ -27,6 +26,7 @@ const Splash = () => {
       </div>
       <button className="change-background-btn" onClick={() => changeclass()}>
       </button>
+    </div>
     </div>
   );
 };

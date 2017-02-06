@@ -10,8 +10,7 @@ class ProfileForm extends React.Component {
       username: this.props.currentUser.username,
       first_name: this.props.currentUser.first_name,
       last_name: this.props.currentUser.last_name,
-      about: this.props.currentUser.about || "",
-      email: this.props.currentUser.email,
+      about: this.props.currentUser.about,
       profile_img_url: this.props.profileImgUrl,
       cover_img_url: this.props.profileImgUrl,
       id: this.props.currentUser.id
@@ -123,12 +122,6 @@ class ProfileForm extends React.Component {
                   type="text"
                   value={this.state.last_name}
                   onChange={this.update('last_name')} />
-              </label>
-              <label>Email
-                <input
-                  type="text"
-                  value={this.state.email}
-                  onChange={this.update('email')} />
               </label>
               <label>About
                 <textarea

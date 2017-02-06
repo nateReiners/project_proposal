@@ -84,6 +84,7 @@
 
   .profile-photos {
     width: 100vw;
+    min-height: 55vh;
     border: 1px solid black;
     padding: 20px;
     display: flex;
@@ -128,6 +129,7 @@
       flex-wrap: wrap;
       padding: 10px 30px 10px 30px;
     }
+
 
     .photos-index-item {
       height: 200px;
