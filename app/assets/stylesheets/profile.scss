@@ -89,7 +89,6 @@
 
   .profile-photos {
     width: 100vw;
-    border: 1px solid black;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -108,11 +107,10 @@
       h1 {
         padding-bottom: 20px;
         font-size: 24px;
-        text-decoration: underline;
       }
 
       .about-div {
-        padding: 20px 80px 40px 80px;
+        padding: 20px 80px 80px 80px;
         max-width: 600px;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;

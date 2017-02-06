@@ -30,8 +30,8 @@ const Root = ({ store }) => {
   return (
     <Provider store={ store }>
       <Router history={ hashHistory }>
-        <Route path="/" component={ Splash } />
-          <Route component={ App }>
+        <Route path="/" component={ App }>
+          <IndexRoute component={ Splash }/>
             <Route path="login" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn} />
             <Route path="signup" component={ SessionFormContainer } onEnter={_redirectIfLoggedIn} />
             <Route path="home" component={ HomeContainer } onEnter={_ensureLoggedIn}/>
@@ -39,7 +39,7 @@ const Root = ({ store }) => {
             <Route path="users/:id/edit" component={ProfileFormContainer} onEnter={_ensureLoggedIn} />
             <Route path="profile" component={ProfileContainer} onEnter={_ensureLoggedIn}/>
             <Route path="photos/:id" component={PhotoDetailContainer} onEnter={_ensureLoggedIn} />
-          </Route>
+        </Route>
       </Router>
     </Provider>
   );
