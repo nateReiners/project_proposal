@@ -1,16 +1,19 @@
 .profile-div {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
   background: #f4f1ed;
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   .cover-photo-div {
-    margin-top: 50px;
     width: 100%;
-    height: 33vw;
+    height: 28vw;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +41,8 @@
       bottom: 5vw;
       height: 20vw;
       width: 20vw;
+      max-height: 200px;
+      max-width: 200px;
       border-radius: 50%;
       overflow: hidden;
       display: flex;
@@ -84,7 +89,6 @@
 
   .profile-photos {
     width: 100vw;
-    min-height: 55vh;
     border: 1px solid black;
     padding: 20px;
     display: flex;
@@ -102,7 +106,7 @@
       flex-direction: row;
 
       h1 {
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         font-size: 24px;
         text-decoration: underline;
       }
@@ -121,7 +125,7 @@
     }
 
     ul {
-      margin-bottom: 100px;
+      padding-bottom: 100px;
       list-style: none;
       display: flex;
       justify-content: center;
@@ -134,7 +138,7 @@
     .photos-index-item {
       height: 200px;
       width: 300px;
-      margin: 5px;
+      padding: 5px;
       box-sizing: border-box;
       display: flex;
       overflow: hidden;
