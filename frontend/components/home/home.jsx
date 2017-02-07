@@ -19,7 +19,7 @@ class Home extends React.Component {
       <div className="home-main">
         <div className="home-div">
           <div className="home-feed-div">
-            <h1>Photos from Photographers You Follow</h1>
+            <h2>Photos from Photographers You Follow</h2>
             <PhotosIndexContainer photos={ values(this.props.photos) || [] } />
           </div>
         </div>
