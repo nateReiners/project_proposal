@@ -23,7 +23,7 @@ const Splash = () => {
         <div className="splash-welcome">
           <h1>Where photographers connect</h1>
           <h2>Share your work, and stay inspired.</h2>
-          <DemoButtonContainer classname="demo-button" />
+          <DemoButtonContainer classname="demo-button"/>
         </div>
       </div>
       <div className="change-background-btn" onClick={() => changeclass()}>

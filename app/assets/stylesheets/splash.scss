@@ -2,7 +2,7 @@
 @keyframes grow {
   from { opacity: 0; }
   to   { opacity: 1; }
-  from { transform: scale(.98); }
+  from { transform: scale(.95); }
   to { transform: scale(1); }
 }
 
@@ -55,6 +55,9 @@
     h2 {
       font-size: 24px;
     }
+    p {
+      font-size: 20px;
+    }
   }
 
   @media all and (max-width: 959px) and (min-width: 600px) {
@@ -64,28 +67,32 @@
     h2 {
       font-size: 3vw;
     }
+    p {
+      font-size: 2.5vw;
+    }
   }
 
   @media all and (max-width: 599px) and (min-width: 50px) {
   h1{
-      font-size: 6vw;
+      font-size: 5.5vw;
     }
     h2 {
-      font-size: 4vw;
+      font-size: 3.8vw;
+    }
+    p {
+      font-size: 3vw;
     }
   }
 
 
-.splash-welcome-container {
-
-
-
+body {
+  min-width: 317px;
 }
 
 .splash-welcome {
   opacity: 0;
   z-index: -2;
-  padding-top: 5vh;
+  padding-top: 8vh;
   color: white;
   font-family: sans-serif;
   display: flex;
@@ -93,11 +100,11 @@
   align-items: center;
   flex-direction: column;
 
-  -webkit-animation: grow 2.6s; /* Safari, Chrome and Opera > 12.6.1 */
-     -moz-animation: grow 2.6s; /* Firefox < 16 */
-      -ms-animation: grow 2.6s; /* Internet Explorer */
-       -o-animation: grow 2.6s; /* Opera < 12.6.1 */
-          animation: grow 2.6s;
+  -webkit-animation: grow 2s; /* Safari, Chrome and Opera > 12.6.1 */
+     -moz-animation: grow 2s; /* Firefox < 16 */
+      -ms-animation: grow 2s; /* Internet Explorer */
+       -o-animation: grow 2s; /* Opera < 12.6.1 */
+          animation: grow 2s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-delay: .6s;
 
@@ -112,12 +119,13 @@
   }
   button {
     z-index: 10;
-    font-size: 20px;
-    padding: 12px 20px 12px 20px;
-    background: #0082e5;
+    padding: 12px 16px 12px 16px;
+    background: #00bbff;
+    filter: brightness(.9);
   }
   button:hover {
-    background: #0087ff;
+    background: #00bbff;
+    filter: brightness(1);
   }
 }
 
