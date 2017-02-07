@@ -21,7 +21,7 @@
 
 
     .logo:hover {
-      background: #F2F2F2;
+      content: image_url("logo-blue.png");
     }
 
 
@@ -42,18 +42,12 @@
         padding: 0;
         margin: 0;
       }
+      .exit-icon:hover {
+        content: image_url("exit-blue.png");
+      }
 
       p {
         display: none;
-      }
-    }
-    .exit-link:hover {
-      p {
-        font-size: 10px;
-        font-weight: bold;
-        margin: 0;
-        padding: 0px;
-        display: block;
       }
     }
 
@@ -72,17 +66,11 @@
         padding: 0;
         margin: 0;
       }
+      .upload-icon:hover {
+        content: image_url("upload-blue.png");
+      }
       p {
         display: none;
-      }
-    }
-    .upload-link:hover {
-      p {
-        font-size: 10px;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-        display: block;
       }
     }
 
@@ -95,9 +83,8 @@
 
       .profile-link {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        flex-direction: column;
         height: 30px;
         width: 30px;
 
@@ -108,17 +95,12 @@
           content: image_url("profile.png");
         }
 
-        p {
-          display: none;
+        .profile-icon:hover {
+          content: image_url("profile-blue.png");
         }
-      }
-      .profile-link:hover {
+
         p {
-          font-size: 10px;
-          font-weight: bold;
-          margin: 0;
-          padding: 0;
-          display: block;
+          font-size: 14px;
         }
       }
     }
