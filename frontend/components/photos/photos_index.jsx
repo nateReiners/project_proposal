@@ -7,14 +7,14 @@ class PhotosIndex extends Component {
     super(props);
   }
 
-  
+
 
   render() {
     const photos = this.props.photos;
     return (
       <section className="photos-index">
         <ul>
-          {photos.map((photo, i) => <PhotosIndexItem key={i} photo={photo} />)}
+          {photos.reverse().map((photo, i) => <PhotosIndexItem key={i} photo={photo} />)}
         </ul>
       </section>
     );

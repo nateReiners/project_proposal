@@ -55,6 +55,7 @@ class Profile extends React.Component {
 
     let profileFormButton;
     let followButton;
+    let photos;
     let photosName;
     if (this.props.params.id == this.props.currentUser.id) {
       const url = `users/${this.props.currentUser.id}/edit`
@@ -67,7 +68,11 @@ class Profile extends React.Component {
       photosName = `${this.props.user.first_name}'s'`;
     }
     let name = `${this.props.user.first_name} ${this.props.user.last_name}`;
-
+    if (this.props.user.photos) {
+      photos = <PhotosIndexContainer photos={this.props.user.photos || []} />;
+    } else {
+      photos = <div></div>;
+    }
     if (this.props.currentUser === null) {
       return (<div></div>)
     } else if (this.props.user === null) {
@@ -97,7 +102,7 @@ class Profile extends React.Component {
             </div>
           </div>
             <h1>{photosName} Photos</h1>
-            <PhotosIndexContainer photos={this.props.user.photos || []} />
+            {photos}
           </div>
         </div>
         </div>
