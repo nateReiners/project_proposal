@@ -19,7 +19,7 @@ const PhotosIndexItem = ({ photo, router }) => {
           </div>
         </Link>
         <div className="title">
-          <p>{photo.title}</p>
+          <h3>{photo.title}</h3>
         </div>
       </div>
     </li>
