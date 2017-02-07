@@ -101,11 +101,11 @@ body {
   flex-direction: column;
   padding-bottom: 15px;
 
-  -webkit-animation: grow 2s; /* Safari, Chrome and Opera > 12.6.1 */
-     -moz-animation: grow 2s; /* Firefox < 16 */
-      -ms-animation: grow 2s; /* Internet Explorer */
-       -o-animation: grow 2s; /* Opera < 12.6.1 */
-          animation: grow 2s;
+  -webkit-animation: grow 1s; /* Safari, Chrome and Opera > 12.6.1 */
+     -moz-animation: grow 1s; /* Firefox < 16 */
+      -ms-animation: grow 1s; /* Internet Explorer */
+       -o-animation: grow 1s; /* Opera < 11.5.6.1 */
+          animation: grow 1s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-delay: .6s;
 
