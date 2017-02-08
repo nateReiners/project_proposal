@@ -1,5 +1,5 @@
 .logged-in-nav {
-  height: 60px;
+  height: 50px;
   position: fixed;
   z-index: 5;
   width: 100vw;
@@ -24,83 +24,116 @@
       content: image_url("logo-blue.png");
     }
 
-
-    .exit-link {
-      cursor: pointer;
-      margin-right: 3vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 30px;
-      width: 30px;
-      transition: 0.5s ease;
-
-      .exit-icon {
-        content: image_url("exit.png");
-        height: 25px;
-        padding: 0;
-        margin: 0;
-      }
-      .exit-icon:hover {
-        content: image_url("exit-blue.png");
-      }
-
-      p {
-        display: none;
-      }
-    }
-
-    .upload-link {
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-right: 10px;
-      height: 30px;
-      width: 30px;
-      .upload-icon {
-        content: image_url("upload.png");
-        height: 25px;
-        padding: 0;
-        margin: 0;
-      }
-      .upload-icon:hover {
-        content: image_url("upload-blue.png");
-      }
-      p {
-        display: none;
-      }
-    }
-
     .header-group {
-      height: 100%;
+      height: 40px;
+      width: 160px;
       display: flex;
       justify-content: space-between;
+      padding-right: 3vw;
       align-items: center;
       flex-direction: row;
+      padding-top: 10px;
 
       .profile-link {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         height: 30px;
         width: 30px;
 
         .profile-icon {
-          height: 25px;
+          height: 20px;
           padding: 0;
           margin: 0;
           content: image_url("profile.png");
         }
 
-        .profile-icon:hover {
+        p {
+          visibility: hidden;
+          text-align: center;
+          color: #00A8E5;
+          font-size: 12px;
+          margin: 0;
+          padding: 1px;
+        }
+      }
+      .profile-link:hover {
+        .profile-icon {
           content: image_url("profile-blue.png");
         }
-
         p {
-          font-size: 14px;
+          visibility: visible;
+        }
+      }
+
+      .exit-link {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+
+        .exit-icon {
+          content: image_url("exit.png");
+          height: 20px;
+          padding: 0;
+          margin: 0;
+        }
+        p {
+          text-align: center;
+          visibility: hidden;
+          font-size: 12px;
+          margin: 0;
+          padding: 1px;
+          color: #00A8E5;
+        }
+
+
+      }
+      .exit-link:hover {
+        .exit-icon {
+          content: image_url("exit-blue.png");
+        }
+        p {
+          visibility: visible;
+        }
+
+      }
+
+      .upload-link {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 5px;
+        height: 30px;
+        width: 30px;
+
+        .upload-icon {
+          content: image_url("upload.png");
+          height: 20px;
+          padding: 0;
+          margin: 0;
+        }
+        p {
+          text-align: center;
+          visibility: hidden;
+          color: #00A8E5;
+          font-size: 12px;
+          margin: 0;
+          padding: 1px;
+        }
+      }
+      .upload-link:hover {
+        .upload-icon {
+          content: image_url("upload-blue.png");
+        }
+        p {
+          visibility: visible;
         }
       }
     }

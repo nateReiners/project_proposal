@@ -9,7 +9,7 @@ class Api::PhotosController < ApplicationController
     render :index
   end
 
-  
+
 
 
   def show
