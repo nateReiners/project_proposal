@@ -32,7 +32,7 @@
       padding-right: 3vw;
       align-items: center;
       flex-direction: row;
-      padding-top: 10px;
+      padding-top: 6px;
 
       .profile-link {
         display: flex;
@@ -47,13 +47,14 @@
           padding: 0;
           margin: 0;
           content: image_url("profile.png");
+          transition: height .1s ease-out;
         }
 
         p {
           visibility: hidden;
           text-align: center;
           color: #00A8E5;
-          font-size: 12px;
+          font-size: 10px;
           margin: 0;
           padding: 1px;
         }
@@ -61,10 +62,12 @@
       .profile-link:hover {
         .profile-icon {
           content: image_url("profile-blue.png");
+          height: 22px;
         }
         p {
           visibility: visible;
         }
+        margin-bottom: 6px;
       }
 
       .exit-link {
@@ -81,11 +84,14 @@
           height: 20px;
           padding: 0;
           margin: 0;
+          transition: height .1s ease-out;
         }
         p {
           text-align: center;
           visibility: hidden;
-          font-size: 12px;
+          font-size: 10px;
+          font-weight: bolder;
+          font-family: "Helvetica-Neue", helvetica, sans-serif;
           margin: 0;
           padding: 1px;
           color: #00A8E5;
@@ -96,10 +102,12 @@
       .exit-link:hover {
         .exit-icon {
           content: image_url("exit-blue.png");
+          height: 22px;
         }
         p {
           visibility: visible;
         }
+        margin-bottom: 6px;
 
       }
 
@@ -112,18 +120,20 @@
         margin-right: 10px;
         height: 30px;
         width: 30px;
+        transition: margin .1 ease-out;
 
         .upload-icon {
           content: image_url("upload.png");
           height: 20px;
           padding: 0;
           margin: 0;
+          transition: height .1s ease-out;
         }
         p {
           text-align: center;
           visibility: hidden;
           color: #00A8E5;
-          font-size: 12px;
+          font-size: 10px;
           margin: 0;
           padding: 1px;
         }
@@ -131,10 +141,12 @@
       .upload-link:hover {
         .upload-icon {
           content: image_url("upload-blue.png");
+          height: 24px;
         }
         p {
           visibility: visible;
         }
+        margin-bottom: 6px;
       }
     }
 
