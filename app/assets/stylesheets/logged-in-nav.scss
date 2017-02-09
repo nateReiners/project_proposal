@@ -47,7 +47,7 @@
           padding: 0;
           margin: 0;
           content: image_url("profile.png");
-          transition: height .1s ease-out;
+          transition: height ease-out;
         }
 
         p {
@@ -62,10 +62,11 @@
       .profile-link:hover {
         .profile-icon {
           content: image_url("profile-blue.png");
-          height: 22px;
+          height: 23px;
         }
         p {
           visibility: visible;
+          font-weight: bold;
         }
         margin-bottom: 6px;
       }
@@ -84,7 +85,7 @@
           height: 20px;
           padding: 0;
           margin: 0;
-          transition: height .1s ease-out;
+          transition: height ease-out;
         }
         p {
           text-align: center;
@@ -106,6 +107,7 @@
         }
         p {
           visibility: visible;
+          font-weight: bold;
         }
         margin-bottom: 6px;
 
@@ -120,14 +122,14 @@
         margin-right: 10px;
         height: 30px;
         width: 30px;
-        transition: margin .1 ease-out;
+        transition: margin ease-out;
 
         .upload-icon {
           content: image_url("upload.png");
           height: 20px;
           padding: 0;
           margin: 0;
-          transition: height .1s ease-out;
+          transition: height ease-out;
         }
         p {
           text-align: center;
@@ -145,6 +147,7 @@
         }
         p {
           visibility: visible;
+          font-weight: bold;
         }
         margin-bottom: 6px;
       }
