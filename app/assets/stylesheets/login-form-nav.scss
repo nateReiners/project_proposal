@@ -35,7 +35,7 @@
   }
 
   .logo:hover {
-    background: #e4e7e8;
+    content: image_url("logo-blue.png");
   }
 
   .login {
@@ -50,8 +50,7 @@
 
 
     a:hover {
-      background: #e4e7e8;
-      color: black;
+      color: #00A8E5;
     }
   }
 }

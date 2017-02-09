@@ -8,7 +8,7 @@
 
   #background-1 {
     height: 100vh;
-    background: image_url("splash-dark.jpg") no-repeat center center fixed;
+    background: image_url("splash-dark-min1.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -50,10 +50,10 @@
 
   @media all and (min-width: 960px) {
     h1 {
-        font-size: 40px;
+        font-size: 34px;
       }
     h2 {
-      font-size: 24px;
+      font-size: 20px;
     }
     p {
       font-size: 20px;
@@ -62,13 +62,13 @@
 
   @media all and (max-width: 959px) and (min-width: 600px) {
   h1{
-      font-size: 4vw;
+      font-size: 3.5vw;
     }
     h2 {
-      font-size: 3vw;
+      font-size: 2.5vw;
     }
     p {
-      font-size: 2.5vw;
+      font-size: 2vw;
     }
   }
 
