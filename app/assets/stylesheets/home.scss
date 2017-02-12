@@ -16,7 +16,7 @@
 .home-feed-div {
   width: 100vw;
   display: flex;
-  padding-top: 40px;
+  padding-top: 37px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -29,7 +29,8 @@
     width: 100%;
 
       ul {
-        padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         list-style-type: none;
         display: flex;
         justify-content: center;
@@ -45,6 +46,8 @@
 
     .photos-index-item {
       display: flex;
+      justify-content: center;
+      align-items: center;
       height: 240px;
       width: 320px;
       margin: 4px;
