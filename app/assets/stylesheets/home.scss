@@ -1,14 +1,11 @@
-
 .home-div {
   min-height: 90vh;
   padding-top: 5vh;
-  padding-bottom: 50px;
   width: calc(100vw - 30px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-
 }
 
 .home-feed-div {
@@ -16,6 +13,7 @@
   display: flex;
   min-height: 100vh;
   padding-top: 37px;
+
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -31,6 +29,7 @@
 
       ul {
         padding: 20px;
+        padding-bottom: 160px;
         list-style-type: none;
         display: flex;
         justify-content: center;

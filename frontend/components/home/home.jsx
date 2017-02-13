@@ -12,6 +12,8 @@ class Home extends React.Component {
     this.props.requestAllPhotos();
   };
 
+
+
   render() {
     return (
       <div>
