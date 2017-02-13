@@ -1,15 +1,13 @@
 
 .home-div {
   min-height: 90vh;
-  position: absolute;
   padding-top: 5vh;
   padding-bottom: 50px;
-  width: 100vw;
+  width: calc(100vw - 30px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: #f4f1ed;
 
 }
 
@@ -22,92 +20,88 @@
   flex-direction: column;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 4vw;
+  background: #f4f1ed;
+
 
   .photos-index {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
 
       ul {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding: 20px;
         list-style-type: none;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        li {
+
+        .photos-index-item {
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-      }
-
-    .photos-index-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 240px;
-      width: 320px;
-      margin: 4px;
-      overflow: hidden;
-      position: relative;
-
-      img {
-        flex-shrink: 0;
-        min-height: 100%;
-        max-height: 120%;
-        min-width: 100%;
-        max-width: 150%;
-      }
-
-      .img-name-title {
-        opacity: 0.2;
-        visibility: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 320px;
-        height: 40px;
-        position: absolute;
-        padding: 10px;
-        bottom: -60px;
-        background: linear-gradient(
-                        transparent,
-                        black);
-        font-family: 'Ubuntu', sans-serif;
-        color: white;
-        font-size: 14px;
-        transition: bottom .1s, opacity .28s linear;
-
-      .img-and-name, {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 15px;
-
-        .img {
-          height: 36px;
-          width: 36px;
-          margin-right: 10px;
-          border-radius: 100px;
+          height: 240px;
+          width: 320px;
+          margin: 4px;
           overflow: hidden;
+          position: relative;
 
+          img {
+            flex-shrink: 0;
+            min-height: 100%;
+            max-height: 120%;
+            min-width: 100%;
+            max-width: 160%;
           }
 
-        .name {
-          padding: 2px;
+          .img-name-title {
+            opacity: 0.2;
+            visibility: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            height: 40px;
+            position: absolute;
+            padding: 10px;
+            bottom: -60px;
+            background: linear-gradient(
+                            transparent,
+                            black);
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            font-size: 14px;
+            transition: bottom .1s, opacity .28s linear;
+
+          .img-and-name, {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 15px;
+
+            .img {
+              height: 36px;
+              width: 36px;
+              margin-right: 10px;
+              border-radius: 100px;
+              overflow: hidden;
+
+              }
+
+            .name {
+              padding: 2px;
+            }
+          }
+          .title {
+            font-style: italic;
+            text-align: right;
+            padding-right: 20px;
+          }
         }
       }
-      .title {
-        font-style: italic;
-        text-align: right;
-        margin-right: 15px;
-      }
-    }
     }
 
     .photos-index-item:hover {

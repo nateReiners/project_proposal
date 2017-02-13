@@ -16,14 +16,12 @@ class Home extends React.Component {
     return (
       <div>
         <LoggedInNav />
-      <div className="home-main">
         <div className="home-div">
           <div className="home-feed-div">
             <h2>Photos from Photographers You Follow</h2>
             <PhotosIndexContainer photos={ values(this.props.photos) || [] } />
           </div>
         </div>
-      </div>
       </div>
     );
   }
