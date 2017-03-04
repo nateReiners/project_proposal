@@ -51,7 +51,6 @@ Photo.create!(author_id: u2.id, img_url: "https://source.unsplash.com/fj0tFloTPG
 Photo.create!(author_id: u9.id, img_url: "https://source.unsplash.com/2gSfZ9Baph8", title: "Flame")
 Photo.create!(author_id: u4.id, img_url: "https://source.unsplash.com/xGoOzMkETw0", title: "Good Times")
 Photo.create!(author_id: u1.id, img_url: "https://source.unsplash.com/QP1dUyQ8WsI", title: "Forest Growth")
-Photo.create!(author_id: u4.id, img_url: "https://source.unsplash.com/1fuYkTG5DBc", title: "Last Light")
 Photo.create!(author_id: u9.id, img_url: "https://source.unsplash.com/5IHz5WhosQE", title: "Palette")
 Photo.create!(author_id: u7.id, img_url: "https://source.unsplash.com/l-KWtg-sU6A", title: "B&W Seconds")
 Photo.create!(author_id: u1.id, img_url: "https://source.unsplash.com/l93nrdccjF8", title: "Woodsman")
@@ -104,7 +103,6 @@ Photo.create!(author_id: u6.id, img_url: "https://source.unsplash.com/iJu4dDmkuu
 Photo.create!(author_id: u3.id, img_url: "https://source.unsplash.com/3FjIywswHSk", title: "Exquisite")
 Photo.create!(author_id: u6.id, img_url: "https://source.unsplash.com/5x4U6InVXpc", title: "The Climb")
 Photo.create!(author_id: u4.id, img_url: "https://source.unsplash.com/hTTtWbtQQNY", title: "Rays")
-Photo.create!(author_id: u2.id, img_url: "https://source.unsplash.com/hjQEODOPP3g", title: "Water Everywhere")
 
 Photo.create!(author_id: u8.id, img_url: "https://source.unsplash.com/Rshwi48zDQY", title: "Dive")
 Photo.create!(author_id: u3.id, img_url: "https://source.unsplash.com/EDqP5r_QwrE", title: "Arcadian")
@@ -137,7 +135,6 @@ Photo.create!(author_id: u4.id, img_url: "https://source.unsplash.com/ZbGC7zjV0W
 Photo.create!(author_id: u4.id, img_url: "https://source.unsplash.com/wyzdKibOUB4", title: "Distance")
 Photo.create!(author_id: u8.id, img_url: "https://source.unsplash.com/j1AGytUOfXo", title: "Moon")
 Photo.create!(author_id: u1.id, img_url: "https://source.unsplash.com/OxTT6kZs_gU", title: "Forest")
-Photo.create!(author_id: u7.id, img_url: "https://source.unsplash.com/3iAS7bn3Ge0", title: "B&W Days")
 Photo.create!(author_id: u7.id, img_url: "https://source.unsplash.com/Q9YW-3OYcD8", title: "B&W Photo")
 
 Photo.create!(author_id: u10.id, img_url: "https://source.unsplash.com/gWDPk5KYLc4", title: "Warmth")
@@ -156,7 +153,6 @@ Photo.create!(author_id: u6.id, img_url: "https://source.unsplash.com/pOXHU0UEDc
 Photo.create!(author_id: u11.id, img_url: "https://source.unsplash.com/tfqyIwlpEjs", title: "Downwards")
 Photo.create!(author_id: u6.id, img_url: "https://source.unsplash.com/8EPa1q92B5Q", title: "Winter")
 Photo.create!(author_id: u5.id, img_url: "https://source.unsplash.com/L1B7G6XmG_8", title: "Service")
-Photo.create!(author_id: u1.id, img_url: "https://source.unsplash.com/QBXgsc0U0Rc", title: "Leafy Trees")
 Photo.create!(author_id: u3.id, img_url: "https://source.unsplash.com/uZxT3njDQYc", title: "Effulgent")
 Photo.create!(author_id: u11.id, img_url: "https://source.unsplash.com/51AhxwkYyHo", title: "Dessert")
 Photo.create!(author_id: u11.id, img_url: "https://source.unsplash.com/CHHE1hTAwUU", title: "Blur")
