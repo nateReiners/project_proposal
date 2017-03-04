@@ -10,7 +10,6 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 3px;
-  height: auto;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -71,14 +70,14 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
      background: #F2F2F2;
+     height: 100vh;
 
     form {
       display: flex;
       justify-content: center;
-      height: 100vh;
 
       h1 {
         padding-top: 20px;
