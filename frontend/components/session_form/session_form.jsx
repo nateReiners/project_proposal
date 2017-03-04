@@ -1,7 +1,6 @@
 import React from 'react';
 import { Router, hashHistory, Link, withRouter } from 'react-router';
 import DemoButtonContainer from '../demo/demo_button_container';
-import DemoButton from '../demo/demo_button';
 
 import LoginFormNav from '../main_nav/login-form-nav';
 
@@ -129,7 +128,7 @@ class SessionForm extends React.Component {
       );
     }
   }
-
+ // add demo button to form
   render () {
     String.prototype.titleize = function() {
       return this.charAt(0).toUpperCase() + this.slice(1);
