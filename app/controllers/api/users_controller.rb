@@ -1,5 +1,14 @@
 class Api::UsersController < ApplicationController
 
+  def index
+    @users = User.all
+    if @users
+      render "api/users/index"
+    else
+      render json: @users.errors.full_messages, status: 404
+    end
+  end
+
   def show
     @user = User.find(params[:id])
     render "api/users/show" unless @user.id === current_user.id

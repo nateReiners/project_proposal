@@ -72,8 +72,8 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-     background: #F2F2F2;
-     height: 100vh;
+    background: #F2F2F2;
+    min-height: 100vh;
 
     form {
       display: flex;
