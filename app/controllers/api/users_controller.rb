@@ -1,7 +1,10 @@
 class Api::UsersController < ApplicationController
 
   def index
-    @users = User.all
+    @users = User.all.reject do |user|
+      user.is_followed_by?(current_user) || user == current_user
+    end
+
     if @users
       render "api/users/index"
     else
