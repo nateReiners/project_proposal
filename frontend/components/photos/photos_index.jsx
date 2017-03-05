@@ -14,7 +14,7 @@ class PhotosIndex extends Component {
     return (
       <section className="photos-index">
         <ul>
-          {photos.reverse().map((photo, i) => <PhotosIndexItem key={i} photo={photo} />)}
+          {photos.map((photo, i) => <PhotosIndexItem key={i} photo={photo} />)}
         </ul>
       </section>
     );
