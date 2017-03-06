@@ -37,6 +37,13 @@ class Home extends React.Component {
     if (users.length <= 1) {
       users = [];
     }
+    let photos = [];
+    values(this.props.photos).forEach((photo) => {
+      console.log(photo);
+      if (this.props.currentUser) {
+        if (photo.author_id !== this.props.currentUser.id) {photos.push(photo);}
+      }
+    });
 
     return (
       <div>
@@ -44,7 +51,7 @@ class Home extends React.Component {
         <div className="home-div">
           <div className="home-feed-div">
             <h2>Photos from Photographers You Follow</h2>
-            <PhotosIndexContainer photos={ values(this.props.photos) || [] } />
+            <PhotosIndexContainer photos={ photos || [] } />
           <div className="users-index-div">
             <h2>You Might Also Enjoy Photos From...</h2>
             <ul className="users-index">

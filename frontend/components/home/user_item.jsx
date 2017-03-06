@@ -21,7 +21,7 @@ class UserItem extends React.Component {
     return (
       <li key={this.props.user.id} className="user-item">
         <Link onClick={this.makeFollow} className="img-and-name">
-          <h1>Follow {this.props.user.first_name}</h1>
+          <h1>Follow</h1>
           <div className="img">
             <img src={this.props.user.profile_img_url}></img>
           </div>

@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-u1 = User.create!(about: "Growing up in Minnesota, I've always spent a lot of time outdoors. As a teenager I took up photography as a hobby and quickly fell in love with it. I specialize in photographing forests and especially enjoy shooting at dawn.",username: "Danielle Larson", first_name: "Danielle", last_name: "Larson", password: "touchdown", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_scale,w_300/v1484914664/2xshrd9vneu-brooke-cagle_dess1d.jpg", cover_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/v1484914140/img_6882_hkz3bd.jpg")
+u1 = User.create!(about: "Growing up in Minnesota, I've always spent a lot of time outdoors. As a teenager I took up photography as a hobby and quickly fell in love with it. I specialize in photographing forests and especially enjoy shooting at dawn.",username: "Danielle Larson", first_name: "Danielle", last_name: "Larson", password: "touchdown", profile_img_url: "http://res.cloudinary.com/durooeqnc/image/upload/c_scale,w_300/v1484914664/2xshrd9vneu-brooke-cagle_dess1d.jpg")
 u2 = User.create!(about: "Photography is my life. I grew up in Boston and got my first camera at age 14. The rest is history.", username: "Bill Dobson", first_name: "Bill", last_name: "Dobson", password: "touchdown", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_fill,g_face:center,h_200,w_180/v1484898143/cgqg8bx2kbw-alfonso-castro_uxetcv.jpg")
 u3 = User.create!(about: "When I'm not taking pictures, you can find me on the beach or playing music with friends. If I had one wish I'd wish for a Canon EOS 5D Mark III!", username: "Guest McGuest", first_name: "Guest", last_name: "McGuest", password: "demopassword", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_fill,h_200/v1484900402/7xldgzjfx3s-i-m-priscilla_bn3c7f.jpg")
 u4 = User.create!(about: "A content marketing professional at HubSpot, an inbound marketing and sales platform that helps companies attract visitors, convert leads, and close customers. Previously, I worked as a marketing manager for a tech software startup. I graduated with honors from Columbia University with a dual degree in Business Administration and Creative Writing.", username: "Stephanie Donald", first_name: "Stephanie", last_name: "Donald", password: "touchdown", profile_img_url: "https://res.cloudinary.com/durooeqnc/image/upload/c_lfill,g_face:center,w_180/v1484899073/hrzuzox1e6w-brooke-cagle_w4mkyi.jpg")
@@ -159,13 +159,5 @@ Photo.create!(author_id: u11.id, img_url: "https://source.unsplash.com/CHHE1hTAw
 
 Photo.create!(author_id: u3.id, img_url: "https://source.unsplash.com/ssAcdlJRsI4", title: "Adroit")
 
-Follow.create!(follower_id: u3.id, following_id: u1.id)
-Follow.create!(follower_id: u3.id, following_id: u2.id)
 Follow.create!(follower_id: u3.id, following_id: u4.id)
-Follow.create!(follower_id: u3.id, following_id: u5.id)
-Follow.create!(follower_id: u3.id, following_id: u6.id)
 Follow.create!(follower_id: u3.id, following_id: u7.id)
-Follow.create!(follower_id: u3.id, following_id: u8.id)
-Follow.create!(follower_id: u3.id, following_id: u9.id)
-Follow.create!(follower_id: u3.id, following_id: u10.id)
-Follow.create!(follower_id: u3.id, following_id: u11.id)

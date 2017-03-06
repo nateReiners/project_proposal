@@ -32,7 +32,7 @@
       align-items: center;
       flex-direction: row;
       padding-top: 6px;
-      padding-right: 4vw;
+      padding-right: 6vw;
 
       .profile-link {
         display: flex;
@@ -122,7 +122,7 @@
         height: 30px;
         width: 30px;
         transition: margin ease-out;
-        margin-right: 10px;
+        padding-right: 10px;
 
         .upload-icon {
           content: image_url("upload.png");
