@@ -39,7 +39,6 @@ class Home extends React.Component {
     }
     let photos = [];
     values(this.props.photos).forEach((photo) => {
-      console.log(photo);
       if (this.props.currentUser) {
         if (photo.author_id !== this.props.currentUser.id) {photos.push(photo);}
       }
