@@ -5,7 +5,8 @@ import { Router } from 'react-router';
 
 const mapStateToProps = state => ({
   user: state.user,
-  currentUser: state.session.currentUser
+  currentUser: state.session.currentUser,
+  photos: state.user.photos
 });
 
 const mapDispatchToProps = (dispatch) => {

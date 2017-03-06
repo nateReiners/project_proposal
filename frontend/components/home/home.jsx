@@ -14,11 +14,26 @@ class Home extends React.Component {
     this.props.requestAllUsers();
   };
 
-
+  componentWillReceiveProps(nextProps) {
+    const users = this.props.users;
+    const nextUsers = nextProps.users;
+    if (users === nextUsers) {
+    } else {
+      this.props.requestAllPhotos();
+      this.props.requestAllUsers();
+    }
+  }
 
   render() {
 
-    let users = Object.keys(this.props.users).map((key, i) => (<UserItem key={i} user={this.props.users[key] || {}}/>));
+    let users = Object.keys(this.props.users).map((key, i) => (
+      <UserItem
+        key={i}
+        createFollow={this.props.createFollow}
+        currentUser={this.props.currentUser}
+        user={this.props.users[key] || {}}/>
+    ));
+
     if (users.length <= 1) {
       users = [];
     }

@@ -3,7 +3,8 @@ import LoggedInNav from '../main_nav/logged-in_nav';
 import PhotosIndexContainer from '../photos/photos_index_container';
 import FollowButtonContainer from '../follow/follow_button_container';
 import ProfileFormContainer from './profile_form_container';
-import {Link, hashHistory} from 'react-router'
+import {Link, hashHistory} from 'react-router';
+
 class Profile extends React.Component {
   constructor(props) {
     super(props);
@@ -57,6 +58,7 @@ class Profile extends React.Component {
     let followButton;
     let photos;
     let photosName;
+
     if (this.props.params.id == this.props.currentUser.id) {
       const url = `users/${this.props.currentUser.id}/edit`
       profileFormButton = <button onClick={this.openForm} className="edit-profile-button">Edit Profile</button>;
@@ -69,7 +71,7 @@ class Profile extends React.Component {
     }
     let name = `${this.props.user.first_name} ${this.props.user.last_name}`;
     if (this.props.user.photos) {
-      photos = <PhotosIndexContainer photos={this.props.user.photos || []} />;
+      photos = <PhotosIndexContainer photos={this.props.photos || []} />;
     } else {
       photos = <div></div>;
     }

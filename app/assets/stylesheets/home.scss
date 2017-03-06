@@ -26,42 +26,62 @@
       justify-content: center;
       align-items: center;
 
-      .img-and-name {
-        border: 1px solid gray;
-        border-radius: 5px;
+      .user-item {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        min-width: 250px;
-        margin: 4px;
-        padding: 10px;
+        h1 {
+          position: absolute;
+          visibility: hidden;
+        }
 
-        .img {
-          height: 80px;
-          width: 80px;
-          margin-right: 10px;
-          border-radius: 100px;
-          overflow: hidden;
 
-          img {
-            flex-shrink: 0;
-            min-height: 100%;
-            max-width: 120%;
+        .img-and-name {
+          border: 1px solid gray;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          min-width: 250px;
+          margin: 4px;
+          padding: 10px;
+
+          .img {
+            height: 80px;
+            width: 80px;
+            margin-right: 10px;
+            border-radius: 100px;
+            overflow: hidden;
+
+            img {
+              flex-shrink: 0;
+              min-height: 100%;
+              max-width: 120%;
+            }
+          }
+
+          .name {
+            padding: 5px;
+            font-family: sans-serif;
+            font-size: 18px;
           }
         }
-
-        .name {
-          padding: 5px;
-          font-family: sans-serif;
-          font-size: 18px;
-        }
       }
-      .img-and-name:hover {
-        .img > img {
-          filter: brightness(.9);
+      .user-item:hover {
+        cursor: pointer;
+        .img-and-name {
+          .img > img {
+            filter: brightness(.2);
+          }
+            background: rgba(0, 0, 0, .9);
         }
-          background: rgba(0, 0, 0, .1);
+        h1 {
+          visibility: visible;
+          color: white;
+          font-size: 30px;
+          z-index: 1;
+        }
       }
     }
   }
