@@ -7,6 +7,7 @@ export const RECEIVE_PHOTOS_ERRORS = 'RECEIVE_PHOTOS_ERRORS';
 import * as APIUtil from '../util/photos_api_util';
 
 export const requestAllPhotos = (lastId) => (dispatch) => {
+	console.log("hit requestAllPhotos");
 	return APIUtil.fetchFeedPhotos(lastId)
 		.then(photos => dispatch(receiveAllPhotos(photos)));
 };

@@ -8,6 +8,7 @@ export const RECEIVE_USERS_ERRORS = 'RECEIVE_USERS_ERRORS';
 import * as APIUtil from '../util/users_api_util';
 
 export const requestAllUsers = () => (dispatch) => {
+	console.log("hit requestAllPhotos");
 	return APIUtil.fetchAllUsers()
 		.then(users => dispatch(receiveAllUsers(users)));
 };

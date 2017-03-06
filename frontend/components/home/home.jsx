@@ -1,12 +1,12 @@
 import React from 'react';
 import LoggedInNav from '../main_nav/logged-in_nav';
 import PhotosIndexContainer from '../photos/photos_index_container';
-import { values } from 'lodash';
+import { values, isEqual } from 'lodash';
 import UserItem from './user_item';
 
 class Home extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   componentDidMount() {
@@ -15,12 +15,12 @@ class Home extends React.Component {
   };
 
   componentWillReceiveProps(nextProps) {
-    const users = this.props.users;
-    const nextUsers = nextProps.users;
-    if (users === nextUsers) {
+    const users = this.props.users || {};
+    const nextUsers = nextProps.users || {};
+    if ( _.isEqual(users, nextUsers)) {
     } else {
-      this.props.requestAllPhotos();
       this.props.requestAllUsers();
+      this.props.requestAllPhotos();
     }
   }
 
@@ -37,6 +37,7 @@ class Home extends React.Component {
     if (users.length <= 1) {
       users = [];
     }
+
     return (
       <div>
         <LoggedInNav />
